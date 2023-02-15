@@ -11,7 +11,7 @@ import SwiftUI
 struct INeedHelpApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabSwiftUIView()
         }
     }
 }
