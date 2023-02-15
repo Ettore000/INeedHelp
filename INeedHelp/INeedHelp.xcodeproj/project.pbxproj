@@ -14,6 +14,7 @@
 		4A8E3010299D4ED500320382 /* INeedHelpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E300F299D4ED500320382 /* INeedHelpTests.swift */; };
 		4A8E301A299D4ED500320382 /* INeedHelpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E3019299D4ED500320382 /* INeedHelpUITests.swift */; };
 		4A8E301C299D4ED500320382 /* INeedHelpUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E301B299D4ED500320382 /* INeedHelpUITestsLaunchTests.swift */; };
+		4A8E3029299D509800320382 /* TabSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8E3028299D509800320382 /* TabSwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		4A8E3015299D4ED500320382 /* INeedHelpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = INeedHelpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A8E3019299D4ED500320382 /* INeedHelpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INeedHelpUITests.swift; sourceTree = "<group>"; };
 		4A8E301B299D4ED500320382 /* INeedHelpUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INeedHelpUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4A8E3028299D509800320382 /* TabSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabSwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				4A8E2FFE299D4ED400320382 /* INeedHelpApp.swift */,
 				4A8E3000299D4ED400320382 /* ContentView.swift */,
+				4A8E3028299D509800320382 /* TabSwiftUIView.swift */,
 				4A8E3002299D4ED500320382 /* Assets.xcassets */,
 				4A8E3004299D4ED500320382 /* Preview Content */,
 			);
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A8E3001299D4ED400320382 /* ContentView.swift in Sources */,
+				4A8E3029299D509800320382 /* TabSwiftUIView.swift in Sources */,
 				4A8E2FFF299D4ED400320382 /* INeedHelpApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
