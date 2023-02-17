@@ -17,6 +17,7 @@
 		4AE52436299F9D41000BE036 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52435299F9D41000BE036 /* GradientBackground.swift */; };
 		4AE52438299F9DA8000BE036 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52437299F9DA8000BE036 /* LoginViewController.swift */; };
 		4AE5243A299F9DE0000BE036 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52439299F9DE0000BE036 /* SignUpViewController.swift */; };
+		C36D58DB299FA1C80056D1CB /* Schermata.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36D58DA299FA1C80056D1CB /* Schermata.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		4AE52435299F9D41000BE036 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		4AE52437299F9DA8000BE036 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4AE52439299F9DE0000BE036 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C36D58DA299FA1C80056D1CB /* Schermata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schermata.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,11 +104,12 @@
 			children = (
 				4AE52435299F9D41000BE036 /* GradientBackground.swift */,
 				4A8E2FFE299D4ED400320382 /* INeedHelpApp.swift */,
+				C36D58DA299FA1C80056D1CB /* Schermata.swift */,
 				4A8E3028299D509800320382 /* TabSwiftUIView.swift */,
 				4A8E3002299D4ED500320382 /* Assets.xcassets */,
 				4A8E3004299D4ED500320382 /* Preview Content */,
-				4AE52437299F9DA8000BE036 /* LoginViewController.swift */,
 				4AE52439299F9DE0000BE036 /* SignUpViewController.swift */,
+				4AE52437299F9DA8000BE036 /* LoginViewController.swift */,
 			);
 			path = INeedHelp;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				4AE52438299F9DA8000BE036 /* LoginViewController.swift in Sources */,
 				4A8E3029299D509800320382 /* TabSwiftUIView.swift in Sources */,
+				C36D58DB299FA1C80056D1CB /* Schermata.swift in Sources */,
 				4A8E2FFF299D4ED400320382 /* INeedHelpApp.swift in Sources */,
 				4AE52436299F9D41000BE036 /* GradientBackground.swift in Sources */,
 				4AE5243A299F9DE0000BE036 /* SignUpViewController.swift in Sources */,
