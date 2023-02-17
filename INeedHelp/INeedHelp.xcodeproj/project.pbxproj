@@ -17,6 +17,7 @@
 		4AE52436299F9D41000BE036 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52435299F9D41000BE036 /* GradientBackground.swift */; };
 		4AE52438299F9DA8000BE036 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52437299F9DA8000BE036 /* LoginViewController.swift */; };
 		4AE5243A299F9DE0000BE036 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52439299F9DE0000BE036 /* SignUpViewController.swift */; };
+		BBB16F36299FA33000A3E538 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB16F35299FA33000A3E538 /* Launch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		4AE52435299F9D41000BE036 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		4AE52437299F9DA8000BE036 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4AE52439299F9DE0000BE036 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		BBB16F35299FA33000A3E538 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				4A8E3002299D4ED500320382 /* Assets.xcassets */,
 				4A8E3004299D4ED500320382 /* Preview Content */,
 				4AE52437299F9DA8000BE036 /* LoginViewController.swift */,
+				BBB16F35299FA33000A3E538 /* Launch.swift */,
 				4AE52439299F9DE0000BE036 /* SignUpViewController.swift */,
 			);
 			path = INeedHelp;
@@ -270,6 +273,7 @@
 				4A8E3029299D509800320382 /* TabSwiftUIView.swift in Sources */,
 				4A8E2FFF299D4ED400320382 /* INeedHelpApp.swift in Sources */,
 				4AE52436299F9D41000BE036 /* GradientBackground.swift in Sources */,
+				BBB16F36299FA33000A3E538 /* Launch.swift in Sources */,
 				4AE5243A299F9DE0000BE036 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
