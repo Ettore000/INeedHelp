@@ -11,7 +11,7 @@ struct TabBarViewController: View {
         TabView {
             NavigationStack {
                 Text("Discover")
-                    .navigationBarTitle("Discover", displayMode: .inline)
+                    .navigationBarTitle("Discover", displayMode: .automatic)
                     .toolbar {
                         ToolbarItem {
                             ImageFieldView()
@@ -23,6 +23,11 @@ struct TabBarViewController: View {
                     Label("Discover", systemImage: "globe")
                 }
             NavigationStack {
+                VStack {
+                    HStack {
+                        
+                    }
+                }
                 Text("New")
                     .navigationBarTitle("New", displayMode: .automatic)
                     .toolbar {
@@ -53,16 +58,19 @@ struct TabBarViewController: View {
 struct ImageFieldView: View {
     @State private var isShowingImageDetail = false
     var body: some View {
-        Image("fp2")
-            .resizable()
-            .frame(width: 50, height: 50)
-            .clipShape(Circle())
-            .onTapGesture {
-                self.isShowingImageDetail = true
-            }
-            .sheet(isPresented: $isShowingImageDetail) {
-                ImageDetailView()
-            }
+        VStack {
+            Image("fp2")
+                .resizable()
+                .frame(width: 50, height: 50)
+                .clipShape(Circle())
+                .onTapGesture {
+                    self.isShowingImageDetail = true
+                }
+                .sheet(isPresented: $isShowingImageDetail) {
+                    ImageDetailView()
+                }
+        }
+        
     }
 }
 
