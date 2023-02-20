@@ -19,6 +19,7 @@
 		4AA180E129A3D76900EEB2E3 /* Page1SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA180E029A3D76900EEB2E3 /* Page1SwiftUIView.swift */; };
 		4AA180E329A3D77600EEB2E3 /* Page4SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA180E229A3D77600EEB2E3 /* Page4SwiftUIView.swift */; };
 		4AA180E529A3D78400EEB2E3 /* Page5SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA180E429A3D78400EEB2E3 /* Page5SwiftUIView.swift */; };
+		4AA180E729A3DAAC00EEB2E3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA180E629A3DAAC00EEB2E3 /* ProfileViewController.swift */; };
 		4AE52436299F9D41000BE036 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52435299F9D41000BE036 /* GradientBackground.swift */; };
 		4AE52438299F9DA8000BE036 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52437299F9DA8000BE036 /* LoginViewController.swift */; };
 		4AE5243A299F9DE0000BE036 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52439299F9DE0000BE036 /* SignUpViewController.swift */; };
@@ -58,6 +59,7 @@
 		4AA180E029A3D76900EEB2E3 /* Page1SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page1SwiftUIView.swift; sourceTree = "<group>"; };
 		4AA180E229A3D77600EEB2E3 /* Page4SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page4SwiftUIView.swift; sourceTree = "<group>"; };
 		4AA180E429A3D78400EEB2E3 /* Page5SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page5SwiftUIView.swift; sourceTree = "<group>"; };
+		4AA180E629A3DAAC00EEB2E3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4AE52435299F9D41000BE036 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		4AE52437299F9DA8000BE036 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4AE52439299F9DE0000BE036 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				4A8E2FFE299D4ED400320382 /* INeedHelpApp.swift */,
 				4A8E3002299D4ED500320382 /* Assets.xcassets */,
 				4AA180D829A3D2AA00EEB2E3 /* TabBarViewController.swift */,
+				4AA180E629A3DAAC00EEB2E3 /* ProfileViewController.swift */,
 				4AA180DC29A3D4F600EEB2E3 /* Page2SwiftUIView.swift */,
 				4AA180DE29A3D74100EEB2E3 /* Page3SwiftUIView.swift */,
 				4AA180E029A3D76900EEB2E3 /* Page1SwiftUIView.swift */,
@@ -290,6 +293,7 @@
 				4AE52436299F9D41000BE036 /* GradientBackground.swift in Sources */,
 				BBB16F36299FA33000A3E538 /* Launch.swift in Sources */,
 				4AA180D929A3D2AA00EEB2E3 /* TabBarViewController.swift in Sources */,
+				4AA180E729A3DAAC00EEB2E3 /* ProfileViewController.swift in Sources */,
 				4AA180DD29A3D4F600EEB2E3 /* Page2SwiftUIView.swift in Sources */,
 				4AA180E529A3D78400EEB2E3 /* Page5SwiftUIView.swift in Sources */,
 				4AE5243A299F9DE0000BE036 /* SignUpViewController.swift in Sources */,

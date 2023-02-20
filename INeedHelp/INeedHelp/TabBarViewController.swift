@@ -14,9 +14,10 @@ struct TabBarViewController: View {
                     .navigationBarTitle("Discover", displayMode: .automatic)
                     .toolbar {
                         ToolbarItem {
-                            Button("Profile") {
-                                //Image("fp1")
-                            }
+                            Image("fp1")
+                                .resizable()
+                                .scaledToFit()
+                                .cornerRadius(60)
                         }
                     }
             }.onTapGesture {}
