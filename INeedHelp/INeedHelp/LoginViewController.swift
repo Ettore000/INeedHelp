@@ -85,14 +85,14 @@ struct LoginFormView: View {
                     }
                     HStack {
                         Button(action:{/*azione*/}) {
-                            Image("Image 1")
+                            Image("login1")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 60, height: 60)
                                 .padding(.horizontal)
                         }
                         Button(action:{/*azione*/}) {
-                            Image("Image 2")
+                            Image("login2")
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 53, height: 53)

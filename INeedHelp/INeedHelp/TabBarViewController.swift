@@ -11,16 +11,14 @@ struct TabBarViewController: View {
         TabView {
             NavigationStack {
                 Text("Discover")
-                    .navigationBarTitle("Discover", displayMode: .automatic)
+                    .navigationBarTitle("Discover", displayMode: .inline)
                     .toolbar {
                         ToolbarItem {
-                            Image("fp1")
-                                .resizable()
-                                .scaledToFit()
-                                .cornerRadius(60)
+                            ImageFieldView()
                         }
                     }
-            }.onTapGesture {}
+            }
+            .onTapGesture {}
                 .tabItem {
                     Label("Discover", systemImage: "globe")
                 }
@@ -29,7 +27,7 @@ struct TabBarViewController: View {
                     .navigationBarTitle("New", displayMode: .automatic)
                     .toolbar {
                         ToolbarItem {
-                            Button("Profile") {}
+                            ImageFieldView()
                         }
                     }
             }.onTapGesture {}
@@ -41,7 +39,7 @@ struct TabBarViewController: View {
                     .navigationBarTitle("Categories", displayMode: .automatic)
                     .toolbar {
                         ToolbarItem {
-                            Button("Profile") {}
+                            ImageFieldView()
                         }
                     }
             }.onTapGesture {}
@@ -49,6 +47,28 @@ struct TabBarViewController: View {
                     Label("Categories", systemImage: "circle.hexagongrid.circle")
                 }
         }
+    }
+}
+
+struct ImageFieldView: View {
+    @State private var isShowingImageDetail = false
+    var body: some View {
+        Image("fp2")
+            .resizable()
+            .frame(width: 50, height: 50)
+            .clipShape(Circle())
+            .onTapGesture {
+                self.isShowingImageDetail = true
+            }
+            .sheet(isPresented: $isShowingImageDetail) {
+                ImageDetailView()
+            }
+    }
+}
+
+struct ImageDetailView: View {
+    var body: some View {
+        ProfileViewController()
     }
 }
 
