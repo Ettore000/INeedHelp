@@ -17,6 +17,7 @@
 		4AE52436299F9D41000BE036 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52435299F9D41000BE036 /* GradientBackground.swift */; };
 		4AE52438299F9DA8000BE036 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52437299F9DA8000BE036 /* LoginViewController.swift */; };
 		4AE5243A299F9DE0000BE036 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52439299F9DE0000BE036 /* SignUpViewController.swift */; };
+		BBEA56AF29A3CE2600C76B92 /* Page2SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEA56AE29A3CE2600C76B92 /* Page2SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		4AE52435299F9D41000BE036 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		4AE52437299F9DA8000BE036 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4AE52439299F9DE0000BE036 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		BBEA56AE29A3CE2600C76B92 /* Page2SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				4AE52435299F9D41000BE036 /* GradientBackground.swift */,
 				4A8E2FFE299D4ED400320382 /* INeedHelpApp.swift */,
 				4A8E3028299D509800320382 /* TabSwiftUIView.swift */,
+				BBEA56AE29A3CE2600C76B92 /* Page2SwiftUIView.swift */,
 				4A8E3002299D4ED500320382 /* Assets.xcassets */,
 				4A8E3004299D4ED500320382 /* Preview Content */,
 				4AE52437299F9DA8000BE036 /* LoginViewController.swift */,
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBEA56AF29A3CE2600C76B92 /* Page2SwiftUIView.swift in Sources */,
 				4AE52438299F9DA8000BE036 /* LoginViewController.swift in Sources */,
 				4A8E3029299D509800320382 /* TabSwiftUIView.swift in Sources */,
 				4A8E2FFF299D4ED400320382 /* INeedHelpApp.swift in Sources */,
