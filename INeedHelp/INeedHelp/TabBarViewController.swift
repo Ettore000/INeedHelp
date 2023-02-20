@@ -15,7 +15,7 @@ struct TabBarViewController: View {
                     .toolbar {
                         ToolbarItem {
                             Button("Profile") {
-                                Image("fp1")
+                                //Image("fp1")
                             }
                         }
                     }
