@@ -25,7 +25,7 @@
 		4ABC061A29A4E59A009CA9D4 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC061929A4E59A009CA9D4 /* FavouritesViewController.swift */; };
 		4ABC061C29A4E6D2009CA9D4 /* DiscoverUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC061B29A4E6D2009CA9D4 /* DiscoverUIView.swift */; };
 		4ABC061E29A4E6E5009CA9D4 /* CategoriesUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC061D29A4E6E5009CA9D4 /* CategoriesUIView.swift */; };
-		4ABC062029A4E6FB009CA9D4 /* NewUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC061F29A4E6FB009CA9D4 /* NewUIView.swift */; };
+		4ABC062229A5182C009CA9D4 /* SendAFeedbackUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC062129A5182C009CA9D4 /* SendAFeedbackUIView.swift */; };
 		4AE52436299F9D41000BE036 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52435299F9D41000BE036 /* GradientBackground.swift */; };
 		4AE52438299F9DA8000BE036 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52437299F9DA8000BE036 /* LoginViewController.swift */; };
 		4AE5243A299F9DE0000BE036 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52439299F9DE0000BE036 /* SignUpViewController.swift */; };
@@ -70,7 +70,7 @@
 		4ABC061929A4E59A009CA9D4 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		4ABC061B29A4E6D2009CA9D4 /* DiscoverUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverUIView.swift; sourceTree = "<group>"; };
 		4ABC061D29A4E6E5009CA9D4 /* CategoriesUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesUIView.swift; sourceTree = "<group>"; };
-		4ABC061F29A4E6FB009CA9D4 /* NewUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUIView.swift; sourceTree = "<group>"; };
+		4ABC062129A5182C009CA9D4 /* SendAFeedbackUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendAFeedbackUIView.swift; sourceTree = "<group>"; };
 		4AE52435299F9D41000BE036 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		4AE52437299F9DA8000BE036 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4AE52439299F9DE0000BE036 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -124,25 +124,15 @@
 		4A8E2FFD299D4ED400320382 /* INeedHelp */ = {
 			isa = PBXGroup;
 			children = (
-				4AE52435299F9D41000BE036 /* GradientBackground.swift */,
 				4A8E2FFE299D4ED400320382 /* INeedHelpApp.swift */,
 				4A8E3002299D4ED500320382 /* Assets.xcassets */,
-				4AA180D829A3D2AA00EEB2E3 /* TabBarViewController.swift */,
-				4AA180E629A3DAAC00EEB2E3 /* ProfileViewController.swift */,
-				4ABC061929A4E59A009CA9D4 /* FavouritesViewController.swift */,
+				4ABC062429A526ED009CA9D4 /* Basics */,
+				4ABC062729A528C1009CA9D4 /* ProfilePage */,
 				4ABC061B29A4E6D2009CA9D4 /* DiscoverUIView.swift */,
 				4ABC061D29A4E6E5009CA9D4 /* CategoriesUIView.swift */,
-				4ABC061F29A4E6FB009CA9D4 /* NewUIView.swift */,
-				4ABC060F29A4B736009CA9D4 /* CoursesViewController.swift */,
-				4ABC060D29A4B716009CA9D4 /* SettingsViewController.swift */,
-				4AA180DC29A3D4F600EEB2E3 /* Page2SwiftUIView.swift */,
-				4AA180DE29A3D74100EEB2E3 /* Page3SwiftUIView.swift */,
-				4AA180E029A3D76900EEB2E3 /* Page1SwiftUIView.swift */,
-				4AA180E229A3D77600EEB2E3 /* Page4SwiftUIView.swift */,
-				4AA180E429A3D78400EEB2E3 /* Page5SwiftUIView.swift */,
+				4ABC062629A527F2009CA9D4 /* LaunchPages */,
+				4ABC062529A527B6009CA9D4 /* SignInForms */,
 				4A8E3004299D4ED500320382 /* Preview Content */,
-				4AE52437299F9DA8000BE036 /* LoginViewController.swift */,
-				4AE52439299F9DE0000BE036 /* SignUpViewController.swift */,
 			);
 			path = INeedHelp;
 			sourceTree = "<group>";
@@ -170,6 +160,64 @@
 				4A8E301B299D4ED500320382 /* INeedHelpUITestsLaunchTests.swift */,
 			);
 			path = INeedHelpUITests;
+			sourceTree = "<group>";
+		};
+		4ABC062429A526ED009CA9D4 /* Basics */ = {
+			isa = PBXGroup;
+			children = (
+				4AE52435299F9D41000BE036 /* GradientBackground.swift */,
+				4AA180D829A3D2AA00EEB2E3 /* TabBarViewController.swift */,
+			);
+			path = Basics;
+			sourceTree = "<group>";
+		};
+		4ABC062529A527B6009CA9D4 /* SignInForms */ = {
+			isa = PBXGroup;
+			children = (
+				4AE52437299F9DA8000BE036 /* LoginViewController.swift */,
+				4AE52439299F9DE0000BE036 /* SignUpViewController.swift */,
+			);
+			path = SignInForms;
+			sourceTree = "<group>";
+		};
+		4ABC062629A527F2009CA9D4 /* LaunchPages */ = {
+			isa = PBXGroup;
+			children = (
+				4AA180E029A3D76900EEB2E3 /* Page1SwiftUIView.swift */,
+				4AA180DC29A3D4F600EEB2E3 /* Page2SwiftUIView.swift */,
+				4AA180DE29A3D74100EEB2E3 /* Page3SwiftUIView.swift */,
+				4AA180E229A3D77600EEB2E3 /* Page4SwiftUIView.swift */,
+				4AA180E429A3D78400EEB2E3 /* Page5SwiftUIView.swift */,
+			);
+			path = LaunchPages;
+			sourceTree = "<group>";
+		};
+		4ABC062729A528C1009CA9D4 /* ProfilePage */ = {
+			isa = PBXGroup;
+			children = (
+				4AA180E629A3DAAC00EEB2E3 /* ProfileViewController.swift */,
+				4ABC061929A4E59A009CA9D4 /* FavouritesViewController.swift */,
+				4ABC060F29A4B736009CA9D4 /* CoursesViewController.swift */,
+				4ABC060D29A4B716009CA9D4 /* SettingsViewController.swift */,
+				4ABC062829A528D4009CA9D4 /* Settings */,
+			);
+			path = ProfilePage;
+			sourceTree = "<group>";
+		};
+		4ABC062829A528D4009CA9D4 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				4ABC062129A5182C009CA9D4 /* SendAFeedbackUIView.swift */,
+				4ABC062929A528DF009CA9D4 /* AdvancedSettings */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4ABC062929A528DF009CA9D4 /* AdvancedSettings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AdvancedSettings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +357,7 @@
 				4A8E2FFF299D4ED400320382 /* INeedHelpApp.swift in Sources */,
 				4AE52436299F9D41000BE036 /* GradientBackground.swift in Sources */,
 				4AA180D929A3D2AA00EEB2E3 /* TabBarViewController.swift in Sources */,
+				4ABC062229A5182C009CA9D4 /* SendAFeedbackUIView.swift in Sources */,
 				4AA180E729A3DAAC00EEB2E3 /* ProfileViewController.swift in Sources */,
 				4ABC061C29A4E6D2009CA9D4 /* DiscoverUIView.swift in Sources */,
 				4AA180DD29A3D4F600EEB2E3 /* Page2SwiftUIView.swift in Sources */,
@@ -316,7 +365,6 @@
 				4AE5243A299F9DE0000BE036 /* SignUpViewController.swift in Sources */,
 				4ABC060E29A4B716009CA9D4 /* SettingsViewController.swift in Sources */,
 				4AA180E129A3D76900EEB2E3 /* Page1SwiftUIView.swift in Sources */,
-				4ABC062029A4E6FB009CA9D4 /* NewUIView.swift in Sources */,
 				4ABC061A29A4E59A009CA9D4 /* FavouritesViewController.swift in Sources */,
 				4AA180DF29A3D74100EEB2E3 /* Page3SwiftUIView.swift in Sources */,
 			);

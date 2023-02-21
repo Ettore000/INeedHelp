@@ -17,10 +17,9 @@ struct TabBarViewController: View {
                             .foregroundColor(Color.white)
                     }
                 }
-                
-                
                 Text("")
                     .navigationBarTitle("Discover", displayMode: .automatic)
+                    .foregroundColor(.white)
                     .toolbar {
                         ToolbarItem {
                             ImageFieldView()
@@ -30,6 +29,7 @@ struct TabBarViewController: View {
             .onTapGesture {}
                 .tabItem {
                     Label("Discover", systemImage: "globe")
+                        .foregroundColor(.black)
                 }
             NavigationStack {//ac6ef8 .foregroundColor(Color.red)
                 Text("New")
