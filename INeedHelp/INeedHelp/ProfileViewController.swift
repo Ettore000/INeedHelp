@@ -131,7 +131,7 @@ struct ProfileViewController: View {
                                 .overlay(
                                     VStack {
                                         HStack {
-                                            Image(systemName: "bookmark")
+                                            Image(systemName: "heart")
                                                 .font(.system(size: 50))
                                                 .foregroundColor(Color(UIColor.init(red: 0/255, green: 162/255, blue: 255/255, alpha: 1)))
                                                 .font(.title)
@@ -139,7 +139,7 @@ struct ProfileViewController: View {
                                             Spacer()
                                         }
                                         HStack {
-                                            Text("Saved")
+                                            Text("Favourites")
                                                 .foregroundColor(Color(UIColor.init(red: 0/255, green: 77/255, blue: 128/255, alpha: 1)))
                                                 .font(.largeTitle)
                                         }
@@ -147,7 +147,7 @@ struct ProfileViewController: View {
                                     }
                                 )
                         }
-                        NavigationLink(destination: EmptyView()) {
+                        NavigationLink(destination: CoursesViewController()) {
                             RoundedRectangle(cornerRadius: cornerRadius)
                                 .fill(Color.white)
                                 .opacity(opacity)

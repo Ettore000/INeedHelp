@@ -22,7 +22,7 @@ struct TabBarViewController: View {
                 .tabItem {
                     Label("Discover", systemImage: "globe")
                 }
-            NavigationStack {
+            NavigationStack {//ac6ef8 .foregroundColor(Color.red)
                 VStack {
                     HStack {
                         

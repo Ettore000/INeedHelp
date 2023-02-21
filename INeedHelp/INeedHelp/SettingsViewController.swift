@@ -16,15 +16,6 @@ struct SettingsViewController: View {
     var body: some View {
         ZStack {
             GradientBackground()
-            TopBarView()
-                .overlay(
-                    VStack {
-                        Text("Settings")
-                            .font(.largeTitle)
-                            .foregroundColor(Color(UIColor.init(red: 0/255, green: 77/255, blue: 128/255, alpha: 1)))
-                        Spacer()
-                    }
-                )
             VStack {
                 HStack {
                     Text("Assistance")

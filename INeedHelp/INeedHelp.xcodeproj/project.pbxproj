@@ -22,7 +22,7 @@
 		4AA180E729A3DAAC00EEB2E3 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA180E629A3DAAC00EEB2E3 /* ProfileViewController.swift */; };
 		4ABC060E29A4B716009CA9D4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC060D29A4B716009CA9D4 /* SettingsViewController.swift */; };
 		4ABC061029A4B736009CA9D4 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC060F29A4B736009CA9D4 /* CoursesViewController.swift */; };
-		4ABC061829A4D2CF009CA9D4 /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC061729A4D2CF009CA9D4 /* TopBarView.swift */; };
+		4ABC061A29A4E59A009CA9D4 /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC061929A4E59A009CA9D4 /* FavouritesViewController.swift */; };
 		4AE52436299F9D41000BE036 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52435299F9D41000BE036 /* GradientBackground.swift */; };
 		4AE52438299F9DA8000BE036 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52437299F9DA8000BE036 /* LoginViewController.swift */; };
 		4AE5243A299F9DE0000BE036 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52439299F9DE0000BE036 /* SignUpViewController.swift */; };
@@ -64,7 +64,7 @@
 		4AA180E629A3DAAC00EEB2E3 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4ABC060D29A4B716009CA9D4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		4ABC060F29A4B736009CA9D4 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
-		4ABC061729A4D2CF009CA9D4 /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
+		4ABC061929A4E59A009CA9D4 /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
 		4AE52435299F9D41000BE036 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		4AE52437299F9DA8000BE036 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4AE52439299F9DE0000BE036 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -123,9 +123,9 @@
 				4A8E3002299D4ED500320382 /* Assets.xcassets */,
 				4AA180D829A3D2AA00EEB2E3 /* TabBarViewController.swift */,
 				4AA180E629A3DAAC00EEB2E3 /* ProfileViewController.swift */,
+				4ABC061929A4E59A009CA9D4 /* FavouritesViewController.swift */,
 				4ABC060F29A4B736009CA9D4 /* CoursesViewController.swift */,
 				4ABC060D29A4B716009CA9D4 /* SettingsViewController.swift */,
-				4ABC061729A4D2CF009CA9D4 /* TopBarView.swift */,
 				4AA180DC29A3D4F600EEB2E3 /* Page2SwiftUIView.swift */,
 				4AA180DE29A3D74100EEB2E3 /* Page3SwiftUIView.swift */,
 				4AA180E029A3D76900EEB2E3 /* Page1SwiftUIView.swift */,
@@ -297,7 +297,6 @@
 				4ABC061029A4B736009CA9D4 /* CoursesViewController.swift in Sources */,
 				4AE52438299F9DA8000BE036 /* LoginViewController.swift in Sources */,
 				4A8E2FFF299D4ED400320382 /* INeedHelpApp.swift in Sources */,
-				4ABC061829A4D2CF009CA9D4 /* TopBarView.swift in Sources */,
 				4AE52436299F9D41000BE036 /* GradientBackground.swift in Sources */,
 				4AA180D929A3D2AA00EEB2E3 /* TabBarViewController.swift in Sources */,
 				4AA180E729A3DAAC00EEB2E3 /* ProfileViewController.swift in Sources */,
@@ -306,6 +305,7 @@
 				4AE5243A299F9DE0000BE036 /* SignUpViewController.swift in Sources */,
 				4ABC060E29A4B716009CA9D4 /* SettingsViewController.swift in Sources */,
 				4AA180E129A3D76900EEB2E3 /* Page1SwiftUIView.swift in Sources */,
+				4ABC061A29A4E59A009CA9D4 /* FavouritesViewController.swift in Sources */,
 				4AA180DF29A3D74100EEB2E3 /* Page3SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
