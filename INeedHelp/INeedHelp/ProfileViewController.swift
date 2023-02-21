@@ -14,9 +14,9 @@ struct ProfileViewController: View {
     let fontSizeForDetail: Double = 20
     
     var body: some View {
-        ZStack {
-            GradientBackground()
-            ZStack {
+        NavigationStack {
+            VStack {
+                Spacer()
                 VStack {
                     RoundedRectangle(cornerRadius: cornerRadius)
                         .fill(Color.white)
@@ -73,31 +73,31 @@ struct ProfileViewController: View {
                             }
                         )
                     HStack {
-                        RoundedRectangle(cornerRadius: cornerRadius)
-                            .fill(Color.white)
-                            .opacity(opacity)
-                            .frame(width: fourBlockSize, height: fourBlockSize)
-                            .overlay(
-                                VStack {
-                                    HStack {
-                                        Image(systemName: "gearshape")
-                                            .font(.system(size: 50))
-                                            .foregroundColor(Color(UIColor.init(red: 0/255, green: 162/255, blue: 255/255, alpha: 1)))
-                                            .font(.title)
-                                            .padding()
-                                            .onTapGesture {
-                                                //Vai nella schermata di impostazioni
-                                            }
+                        Spacer()
+                        NavigationLink(destination: SettingsViewController()) {
+                            RoundedRectangle(cornerRadius: cornerRadius)
+                                .fill(Color.white)
+                                .opacity(opacity)
+                                .frame(width: fourBlockSize, height: fourBlockSize)
+                                .overlay(
+                                    VStack {
+                                        HStack {
+                                            Image(systemName: "gearshape")
+                                                .font(.system(size: 50))
+                                                .foregroundColor(Color(UIColor.init(red: 0/255, green: 162/255, blue: 255/255, alpha: 1)))
+                                                .font(.title)
+                                                .padding()
+                                            Spacer()
+                                        }
+                                        HStack {
+                                            Text("Settings")
+                                                .foregroundColor(Color(UIColor.init(red: 0/255, green: 77/255, blue: 128/255, alpha: 1)))
+                                                .font(.largeTitle)
+                                        }
                                         Spacer()
                                     }
-                                    HStack {
-                                        Text("Settings")
-                                            .foregroundColor(Color(UIColor.init(red: 0/255, green: 77/255, blue: 128/255, alpha: 1)))
-                                            .font(.largeTitle)
-                                    }
-                                    Spacer()
-                                }
-                            )
+                                )
+                        }
                         RoundedRectangle(cornerRadius: cornerRadius)
                             .fill(Color.white)
                             .opacity(opacity)
@@ -120,56 +120,64 @@ struct ProfileViewController: View {
                                     Spacer()
                                 }
                             )
+                        Spacer()
                     }
                     HStack {
-                        RoundedRectangle(cornerRadius: cornerRadius)
-                            .fill(Color.white)
-                            .opacity(opacity)
-                            .frame(width: fourBlockSize, height: fourBlockSize)
-                            .overlay(
-                                VStack {
-                                    HStack {
-                                        Image(systemName: "bookmark")
-                                            .font(.system(size: 50))
-                                            .foregroundColor(Color(UIColor.init(red: 0/255, green: 162/255, blue: 255/255, alpha: 1)))
-                                            .font(.title)
-                                            .padding()
+                        NavigationLink(destination: EmptyView()) {
+                            RoundedRectangle(cornerRadius: cornerRadius)
+                                .fill(Color.white)
+                                .opacity(opacity)
+                                .frame(width: fourBlockSize, height: fourBlockSize)
+                                .overlay(
+                                    VStack {
+                                        HStack {
+                                            Image(systemName: "bookmark")
+                                                .font(.system(size: 50))
+                                                .foregroundColor(Color(UIColor.init(red: 0/255, green: 162/255, blue: 255/255, alpha: 1)))
+                                                .font(.title)
+                                                .padding()
+                                            Spacer()
+                                        }
+                                        HStack {
+                                            Text("Saved")
+                                                .foregroundColor(Color(UIColor.init(red: 0/255, green: 77/255, blue: 128/255, alpha: 1)))
+                                                .font(.largeTitle)
+                                        }
                                         Spacer()
                                     }
-                                    HStack {
-                                        Text("Saved")
-                                            .foregroundColor(Color(UIColor.init(red: 0/255, green: 77/255, blue: 128/255, alpha: 1)))
-                                            .font(.largeTitle)
-                                    }
-                                    Spacer()
-                                }
-                            )
-                        RoundedRectangle(cornerRadius: cornerRadius)
-                            .fill(Color.white)
-                            .opacity(opacity)
-                            .frame(width: fourBlockSize, height: fourBlockSize)
-                            .overlay(
-                                VStack {
-                                    HStack {
-                                        Image(systemName: "book.closed")
-                                            .font(.system(size: 50))
-                                            .foregroundColor(Color(UIColor.init(red: 0/255, green: 162/255, blue: 255/255, alpha: 1)))
-                                            .font(.title)
-                                            .padding()
+                                )
+                        }
+                        NavigationLink(destination: EmptyView()) {
+                            RoundedRectangle(cornerRadius: cornerRadius)
+                                .fill(Color.white)
+                                .opacity(opacity)
+                                .frame(width: fourBlockSize, height: fourBlockSize)
+                                .overlay(
+                                    VStack {
+                                        HStack {
+                                            Image(systemName: "book.closed")
+                                                .font(.system(size: 50))
+                                                .foregroundColor(Color(UIColor.init(red: 0/255, green: 162/255, blue: 255/255, alpha: 1)))
+                                                .font(.title)
+                                                .padding()
+                                            Spacer()
+                                        }
+                                        HStack {
+                                            Text("Courses")
+                                                .foregroundColor(Color(UIColor.init(red: 0/255, green: 77/255, blue: 128/255, alpha: 1)))
+                                                .font(.largeTitle)
+                                        }
                                         Spacer()
                                     }
-                                    HStack {
-                                        Text("Courses")
-                                            .foregroundColor(Color(UIColor.init(red: 0/255, green: 77/255, blue: 128/255, alpha: 1)))
-                                            .font(.largeTitle)
-                                    }
-                                    Spacer()
-                                }
-                                
-                            )
+                                    
+                                )
+                        }
                     }
                 }
-            }
+                Spacer()
+                //}
+            }.background(GradientBackground())
+                .ignoresSafeArea(.all)
         }
     }
 }
