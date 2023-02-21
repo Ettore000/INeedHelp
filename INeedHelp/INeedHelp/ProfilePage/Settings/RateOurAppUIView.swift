@@ -1,5 +1,5 @@
 //
-//  ProfilePhoto.swift
+//  RateOurAppUIView.swift
 //  INeedHelp
 //
 //  Created by ettoreantoniopanasia on 21/02/23.
@@ -7,20 +7,20 @@
 
 import SwiftUI
 
-struct ProfilePhotoUIView: View {
+struct RateOurAppUIView: View {
     var body: some View {
         ZStack {
             GradientBackground()
             VStack {
-                Text("Profile photo here")
+                Text("Rate our App here")
                     .foregroundColor(.white)
             }
         }
     }
 }
 
-struct ProfilePhotoUIView_Previews: PreviewProvider {
+struct RateOurAppUIView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfilePhotoUIView()
+        RateOurAppUIView()
     }
 }

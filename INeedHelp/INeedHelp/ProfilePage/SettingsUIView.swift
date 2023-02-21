@@ -13,9 +13,12 @@ struct SettingsUIView: View {
     let cornerRadius: CGFloat = 15
     let opacity: Double = 0.93
     
+    @State var username = ""
+    @State var email = ""
+    @State var address = ""
+    
     var body: some View {
         NavigationStack {
-            
             ZStack {
                 GradientBackground()
                 VStack {
@@ -56,12 +59,14 @@ struct SettingsUIView: View {
                             .opacity(opacity)
                             .frame(width: settingswidth, height: settingsheight)
                             .overlay(
-                                HStack {
-                                    Text("Profile photo")
-                                        .foregroundColor(Color(UIColor.init(red: 0/255, green: 77/255, blue: 128/255, alpha: 1)))
-                                        .padding(.horizontal)
-                                    Spacer()
-                                    chevronRightInTheButton()
+                                NavigationLink(destination: ProfilePhotoUIView()) {
+                                    HStack {
+                                        Text("Profile's photo")
+                                            .foregroundColor(Color(UIColor.init(red: 0/255, green: 77/255, blue: 128/255, alpha: 1)))
+                                            .padding(.horizontal)
+                                        Spacer()
+                                        chevronRightInTheButton()
+                                    }
                                 }
                             )
                     }
@@ -76,9 +81,23 @@ struct SettingsUIView: View {
                                         .foregroundColor(Color(UIColor.init(red: 0/255, green: 77/255, blue: 128/255, alpha: 1)))
                                         .padding(.horizontal)
                                     Spacer()
+                                    Text(username)
                                     chevronRightInTheButton()
                                 }
                             )
+                            .onTapGesture { // Add a tap gesture to show a pop-up when the user taps the rounded rectangle
+                                        let alertController = UIAlertController(title: "Enter username", message: nil, preferredStyle: .alert)
+                                        alertController.addTextField { textField in
+                                            textField.placeholder = "Username"
+                                        }
+                                        alertController.addAction(UIAlertAction(title: "OK", style: .default) { _ in
+                                            if let newUsername = alertController.textFields?.first?.text {
+                                                username = newUsername // Update the username variable with the user's input
+                                            }
+                                        })
+                                        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+                                        UIApplication.shared.windows.first?.rootViewController?.present(alertController, animated: true)
+                                    }
                     }
                     HStack {
                         RoundedRectangle(cornerRadius: cornerRadius)
@@ -91,9 +110,23 @@ struct SettingsUIView: View {
                                         .foregroundColor(Color(UIColor.init(red: 0/255, green: 77/255, blue: 128/255, alpha: 1)))
                                         .padding(.horizontal)
                                     Spacer()
+                                    Text(email)
                                     chevronRightInTheButton()
                                 }
                             )
+                            .onTapGesture { // Add a tap gesture to show a pop-up when the user taps the rounded rectangle
+                                        let alertController = UIAlertController(title: "Enter email", message: nil, preferredStyle: .alert)
+                                        alertController.addTextField { textField in
+                                            textField.placeholder = "Email"
+                                        }
+                                        alertController.addAction(UIAlertAction(title: "OK", style: .default) { _ in
+                                            if let newEmail = alertController.textFields?.first?.text {
+                                                email = newEmail // Update the email variable with the user's input
+                                            }
+                                        })
+                                        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+                                        UIApplication.shared.windows.first?.rootViewController?.present(alertController, animated: true)
+                                    }
                     }
                     HStack {
                         RoundedRectangle(cornerRadius: cornerRadius)
@@ -106,9 +139,23 @@ struct SettingsUIView: View {
                                         .foregroundColor(Color(UIColor.init(red: 0/255, green: 77/255, blue: 128/255, alpha: 1)))
                                         .padding(.horizontal)
                                     Spacer()
+                                    Text(address)
                                     chevronRightInTheButton()
                                 }
                             )
+                            .onTapGesture { // Add a tap gesture to show a pop-up when the user taps the rounded rectangle
+                                        let alertController = UIAlertController(title: "Enter address", message: nil, preferredStyle: .alert)
+                                        alertController.addTextField { textField in
+                                            textField.placeholder = "Address"
+                                        }
+                                        alertController.addAction(UIAlertAction(title: "OK", style: .default) { _ in
+                                            if let newAddress = alertController.textFields?.first?.text {
+                                                address = newAddress // Update the username variable with the user's input
+                                            }
+                                        })
+                                        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+                                        UIApplication.shared.windows.first?.rootViewController?.present(alertController, animated: true)
+                                    }
                     }
                     HStack {
                         Text("Account info's")
@@ -123,13 +170,15 @@ struct SettingsUIView: View {
                             .opacity(opacity)
                             .frame(width: settingswidth, height: settingsheight)
                             .overlay(
-                                HStack {
-                                    Text("Advanced options")
-                                        .foregroundColor(Color(UIColor.init(red: 0/255, green: 77/255, blue: 128/255, alpha: 1)))
-                                        .padding(.horizontal)
-                                    Spacer()
-                                    chevronRightInTheButton()
-                                    
+                                NavigationLink(destination: AdvancedOptionsUIView()) {
+                                    HStack {
+                                        Text("Advanced options")
+                                            .foregroundColor(Color(UIColor.init(red: 0/255, green: 77/255, blue: 128/255, alpha: 1)))
+                                            .padding(.horizontal)
+                                        Spacer()
+                                        chevronRightInTheButton()
+                                        
+                                    }
                                 }
                             )
                     }
@@ -139,12 +188,14 @@ struct SettingsUIView: View {
                             .opacity(opacity)
                             .frame(width: settingswidth, height: settingsheight)
                             .overlay(
-                                HStack {
-                                    Text("Rate our App")
-                                        .foregroundColor(Color(UIColor.init(red: 0/255, green: 77/255, blue: 128/255, alpha: 1)))
-                                        .padding(.horizontal)
-                                    Spacer()
-                                    chevronRightInTheButton()
+                                NavigationLink(destination: RateOurAppUIView()) {
+                                    HStack {
+                                        Text("Rate our App")
+                                            .foregroundColor(Color(UIColor.init(red: 0/255, green: 77/255, blue: 128/255, alpha: 1)))
+                                            .padding(.horizontal)
+                                        Spacer()
+                                        chevronRightInTheButton()
+                                    }
                                 }
                             )
                     }
