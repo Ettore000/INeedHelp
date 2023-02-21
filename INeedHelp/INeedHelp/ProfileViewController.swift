@@ -123,7 +123,7 @@ struct ProfileViewController: View {
                         Spacer()
                     }
                     HStack {
-                        NavigationLink(destination: EmptyView()) {
+                        NavigationLink(destination: FavouritesViewController()) {
                             RoundedRectangle(cornerRadius: cornerRadius)
                                 .fill(Color.white)
                                 .opacity(opacity)

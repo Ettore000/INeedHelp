@@ -10,7 +10,16 @@ struct TabBarViewController: View {
     var body: some View {
         TabView {
             NavigationStack {
-                Text("Discover")
+                ZStack {
+                    GradientBackground()
+                    VStack {
+                        Text("Ciao")
+                            .foregroundColor(Color.white)
+                    }
+                }
+                
+                
+                Text("")
                     .navigationBarTitle("Discover", displayMode: .automatic)
                     .toolbar {
                         ToolbarItem {
@@ -23,11 +32,6 @@ struct TabBarViewController: View {
                     Label("Discover", systemImage: "globe")
                 }
             NavigationStack {//ac6ef8 .foregroundColor(Color.red)
-                VStack {
-                    HStack {
-                        
-                    }
-                }
                 Text("New")
                     .navigationBarTitle("New", displayMode: .automatic)
                     .toolbar {
