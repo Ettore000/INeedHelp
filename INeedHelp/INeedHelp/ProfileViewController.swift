@@ -81,7 +81,7 @@ struct ProfileViewController: View {
                                 VStack {
                                     HStack {
                                         Image(systemName: "gearshape")
-                                            .font(.system(size: 60))
+                                            .font(.system(size: 50))
                                             .foregroundColor(Color(UIColor.init(red: 0/255, green: 162/255, blue: 255/255, alpha: 1)))
                                             .font(.title)
                                             .padding()
@@ -106,7 +106,7 @@ struct ProfileViewController: View {
                                 VStack {
                                     HStack {
                                         Image(systemName: "sun.min")
-                                            .font(.system(size: 60))
+                                            .font(.system(size: 50))
                                             .foregroundColor(Color(UIColor.init(red: 0/255, green: 162/255, blue: 255/255, alpha: 1)))
                                             .font(.title)
                                             .padding()
@@ -130,7 +130,7 @@ struct ProfileViewController: View {
                                 VStack {
                                     HStack {
                                         Image(systemName: "bookmark")
-                                            .font(.system(size: 60))
+                                            .font(.system(size: 50))
                                             .foregroundColor(Color(UIColor.init(red: 0/255, green: 162/255, blue: 255/255, alpha: 1)))
                                             .font(.title)
                                             .padding()
@@ -152,7 +152,7 @@ struct ProfileViewController: View {
                                 VStack {
                                     HStack {
                                         Image(systemName: "book.closed")
-                                            .font(.system(size: 60))
+                                            .font(.system(size: 50))
                                             .foregroundColor(Color(UIColor.init(red: 0/255, green: 162/255, blue: 255/255, alpha: 1)))
                                             .font(.title)
                                             .padding()
