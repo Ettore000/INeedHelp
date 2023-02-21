@@ -8,8 +8,34 @@
 import SwiftUI
 
 struct CoursesViewController: View {
+    @State private var cerca: String = ""
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            VStack {
+                HStack{
+                    Text("Find a best")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .padding(.horizontal)
+                    Spacer()
+                }
+                HStack{
+                    Text("course for you!")
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .padding(.horizontal)
+                    Spacer()
+                }
+                Spacer()
+                
+            }
+            TextField("Name*", text: $cerca)
+                .padding()
+                .background(Color.white.opacity(0.93))
+                .cornerRadius(15)
+            
+        }
+        
     }
 }
 
