@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ProfileViewController: View {
+struct ProfileUIView: View {
     let cornerRadius: CGFloat = 35.0
     let opacity: Double = 0.93
     let fourBlockSize: Double = 175
@@ -74,7 +74,7 @@ struct ProfileViewController: View {
                         )
                     HStack {
                         Spacer()
-                        NavigationLink(destination: SettingsViewController()) {
+                        NavigationLink(destination: SettingsUIView()) {
                             RoundedRectangle(cornerRadius: cornerRadius)
                                 .fill(Color.white)
                                 .opacity(opacity)
@@ -123,7 +123,7 @@ struct ProfileViewController: View {
                         Spacer()
                     }
                     HStack {
-                        NavigationLink(destination: FavouritesViewController()) {
+                        NavigationLink(destination: FavouritesUIView()) {
                             RoundedRectangle(cornerRadius: cornerRadius)
                                 .fill(Color.white)
                                 .opacity(opacity)
@@ -147,7 +147,7 @@ struct ProfileViewController: View {
                                     }
                                 )
                         }
-                        NavigationLink(destination: CoursesViewController()) {
+                        NavigationLink(destination: CoursesUIView()) {
                             RoundedRectangle(cornerRadius: cornerRadius)
                                 .fill(Color.white)
                                 .opacity(opacity)
@@ -182,8 +182,8 @@ struct ProfileViewController: View {
     }
 }
 
-struct ProfileViewController_Previews: PreviewProvider {
+struct ProfileUIView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileViewController()
+        ProfileUIView()
     }
 }

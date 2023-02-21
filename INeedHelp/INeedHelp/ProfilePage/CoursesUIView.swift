@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CoursesViewController: View {
+struct CoursesUIView: View {
     @State private var cerca: String = ""
     var body: some View {
         ZStack {
@@ -39,8 +39,8 @@ struct CoursesViewController: View {
     }
 }
 
-struct CoursesViewController_Previews: PreviewProvider {
+struct CoursesUIView_Previews: PreviewProvider {
     static var previews: some View {
-        CoursesViewController()
+        CoursesUIView()
     }
 }

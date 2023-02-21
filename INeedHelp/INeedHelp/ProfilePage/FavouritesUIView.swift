@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FavouritesViewController: View {
+struct FavouritesUIView: View {
     var body: some View {
         ZStack {
             GradientBackground()
@@ -20,8 +20,8 @@ struct FavouritesViewController: View {
     }
 }
 
-struct FavouritesViewController_Previews: PreviewProvider {
+struct FavouritesUIView_Previews: PreviewProvider {
     static var previews: some View {
-        FavouritesViewController()
+        FavouritesUIView()
     }
 }

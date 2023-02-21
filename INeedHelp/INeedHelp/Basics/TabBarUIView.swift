@@ -6,7 +6,7 @@
 //
 import SwiftUI
 
-struct TabBarViewController: View {
+struct TabBarUIView: View {
     var body: some View {
         TabView {
             NavigationStack {
@@ -80,12 +80,12 @@ struct ImageFieldView: View {
 
 struct ImageDetailView: View {
     var body: some View {
-        ProfileViewController()
+        ProfileUIView()
     }
 }
 
-struct TabBarViewController_Previews: PreviewProvider {
+struct TabBarUIView_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarViewController()
+        TabBarUIView()
     }
 }

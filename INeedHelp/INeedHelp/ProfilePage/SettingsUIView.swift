@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SettingsViewController: View {
+struct SettingsUIView: View {
     let settingswidth: Double = 372
     let settingsheight: Double = 40
     let cornerRadius: CGFloat = 15
@@ -162,8 +162,8 @@ struct chevronRightInTheButton: View {
     }
 }
 
-struct SettingsViewController_Previews: PreviewProvider {
+struct SettingsUIView_Previews: PreviewProvider {
     static var previews: some View {
-        SettingsViewController()
+        SettingsUIView()
     }
 }
