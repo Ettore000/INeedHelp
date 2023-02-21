@@ -10,52 +10,30 @@ struct TabBarUIView: View {
     var body: some View {
         TabView {
             NavigationStack {
-                ZStack {
-                    GradientBackground()
-                    VStack {
-                        Text("Ciao")
-                            .foregroundColor(Color.white)
-                    }
-                }
-                Text("")
-                    .navigationBarTitle("Discover", displayMode: .automatic)
-                    .foregroundColor(.white)
-                    .toolbar {
-                        ToolbarItem {
-                            ImageFieldView()
-                        }
-                    }
+                layoutmark()
+                DiscoverUIView()
             }
             .onTapGesture {}
-                .tabItem {
-                    Label("Discover", systemImage: "globe")
-                        .foregroundColor(.black)
-                }
-            NavigationStack {//ac6ef8 .foregroundColor(Color.red)
-                Text("New")
-                    .navigationBarTitle("New", displayMode: .automatic)
-                    .toolbar {
-                        ToolbarItem {
-                            ImageFieldView()
-                        }
-                    }
+            .tabItem {
+                Label("Discover", systemImage: "globe")
+                    .foregroundColor(.black)
+            }
+            NavigationStack {
+                layoutmark()
+                NewUIView()
             }.onTapGesture {}
                 .tabItem {
                     Label("New", systemImage: "plus.circle")
                 }
             NavigationStack {
-                Text("Categories")
-                    .navigationBarTitle("Categories", displayMode: .automatic)
-                    .toolbar {
-                        ToolbarItem {
-                            ImageFieldView()
-                        }
-                    }
+                layoutmark()
+                CategoriesUIView()
             }.onTapGesture {}
                 .tabItem {
                     Label("Categories", systemImage: "circle.hexagongrid.circle")
                 }
         }
+        .accentColor(Color(UIColor.init(red: 172/255, green: 110/255, blue: 248/255, alpha: 1)))
     }
 }
 
@@ -74,7 +52,22 @@ struct ImageFieldView: View {
                     ImageDetailView()
                 }
         }
-        
+    }
+}
+
+struct layoutmark: View {
+    var body: some View {
+        ZStack {
+            GradientBackground()
+            VStack {
+                HStack {
+                    Spacer()
+                    ImageFieldView()
+                        .padding()
+                }
+                Spacer()
+            }
+        }
     }
 }
 

@@ -30,7 +30,8 @@
 		4ABC062E29A52F0E009CA9D4 /* AdvancedOptionsUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC062D29A52F0E009CA9D4 /* AdvancedOptionsUIView.swift */; };
 		4ABC063029A5302C009CA9D4 /* RateOurAppUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC062F29A5302C009CA9D4 /* RateOurAppUIView.swift */; };
 		4ABC063229A5335D009CA9D4 /* TestUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC063129A5335D009CA9D4 /* TestUIView.swift */; };
-		4ABC063429A53498009CA9D4 /* EditNameUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC063329A53498009CA9D4 /* EditNameUIView.swift */; };
+		4ABC063629A5383E009CA9D4 /* NewUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC063529A5383E009CA9D4 /* NewUIView.swift */; };
+		4ABC063A29A586A2009CA9D4 /* LaunchUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC063929A586A2009CA9D4 /* LaunchUIView.swift */; };
 		4AE52436299F9D41000BE036 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52435299F9D41000BE036 /* GradientBackground.swift */; };
 		4AE52438299F9DA8000BE036 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52437299F9DA8000BE036 /* LoginViewController.swift */; };
 		4AE5243A299F9DE0000BE036 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52439299F9DE0000BE036 /* SignUpViewController.swift */; };
@@ -80,7 +81,8 @@
 		4ABC062D29A52F0E009CA9D4 /* AdvancedOptionsUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedOptionsUIView.swift; sourceTree = "<group>"; };
 		4ABC062F29A5302C009CA9D4 /* RateOurAppUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateOurAppUIView.swift; sourceTree = "<group>"; };
 		4ABC063129A5335D009CA9D4 /* TestUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUIView.swift; sourceTree = "<group>"; };
-		4ABC063329A53498009CA9D4 /* EditNameUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditNameUIView.swift; sourceTree = "<group>"; };
+		4ABC063529A5383E009CA9D4 /* NewUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUIView.swift; sourceTree = "<group>"; };
+		4ABC063929A586A2009CA9D4 /* LaunchUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchUIView.swift; sourceTree = "<group>"; };
 		4AE52435299F9D41000BE036 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		4AE52437299F9DA8000BE036 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4AE52439299F9DE0000BE036 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				4AE52435299F9D41000BE036 /* GradientBackground.swift */,
+				4ABC063929A586A2009CA9D4 /* LaunchUIView.swift */,
 				4AA180D829A3D2AA00EEB2E3 /* TabBarUIView.swift */,
 			);
 			path = Basics;
@@ -209,7 +212,6 @@
 				4ABC061929A4E59A009CA9D4 /* FavouritesUIView.swift */,
 				4ABC060F29A4B736009CA9D4 /* CoursesUIView.swift */,
 				4ABC060D29A4B716009CA9D4 /* SettingsUIView.swift */,
-				4ABC063329A53498009CA9D4 /* EditNameUIView.swift */,
 				4ABC062829A528D4009CA9D4 /* Settings */,
 			);
 			path = ProfilePage;
@@ -238,6 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				4ABC061B29A4E6D2009CA9D4 /* DiscoverUIView.swift */,
+				4ABC063529A5383E009CA9D4 /* NewUIView.swift */,
 				4ABC061D29A4E6E5009CA9D4 /* CategoriesUIView.swift */,
 			);
 			path = Selections;
@@ -375,14 +378,15 @@
 			files = (
 				4ABC061E29A4E6E5009CA9D4 /* CategoriesUIView.swift in Sources */,
 				4ABC063029A5302C009CA9D4 /* RateOurAppUIView.swift in Sources */,
+				4ABC063A29A586A2009CA9D4 /* LaunchUIView.swift in Sources */,
 				4ABC062E29A52F0E009CA9D4 /* AdvancedOptionsUIView.swift in Sources */,
 				4AA180E329A3D77600EEB2E3 /* Page4SwiftUIView.swift in Sources */,
 				4ABC062B29A52976009CA9D4 /* ProfilePhotoUIView.swift in Sources */,
 				4ABC061029A4B736009CA9D4 /* CoursesUIView.swift in Sources */,
 				4AE52438299F9DA8000BE036 /* LoginViewController.swift in Sources */,
-				4ABC063429A53498009CA9D4 /* EditNameUIView.swift in Sources */,
 				4A8E2FFF299D4ED400320382 /* INeedHelpApp.swift in Sources */,
 				4AE52436299F9D41000BE036 /* GradientBackground.swift in Sources */,
+				4ABC063629A5383E009CA9D4 /* NewUIView.swift in Sources */,
 				4AA180D929A3D2AA00EEB2E3 /* TabBarUIView.swift in Sources */,
 				4ABC062229A5182C009CA9D4 /* SendAFeedbackUIView.swift in Sources */,
 				4AA180E729A3DAAC00EEB2E3 /* ProfileUIView.swift in Sources */,

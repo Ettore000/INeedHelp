@@ -67,12 +67,6 @@ struct Page2SwiftUIView: View {
                 
                 Spacer()
                 
-                Button(action: {}) {
-                    
-                    Text("Skip").bold().font(.title).foregroundColor(Color(hue: 0.742, saturation: 0.566, brightness: 0.945)).position(x: 330, y: 730)
-                    
-                }
-                
             }
             
         }
