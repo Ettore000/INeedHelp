@@ -141,7 +141,6 @@
 				4A8E2FFE299D4ED400320382 /* INeedHelpApp.swift */,
 				4A8E3002299D4ED500320382 /* Assets.xcassets */,
 				4ABC063129A5335D009CA9D4 /* TestUIView.swift */,
-				4AE4B0E129A6701D002641FA /* PostUIView.swift */,
 				4ABC062429A526ED009CA9D4 /* Basics */,
 				4ABC062729A528C1009CA9D4 /* ProfilePage */,
 				4ABC062C29A52DBB009CA9D4 /* Selections */,
@@ -180,6 +179,7 @@
 		4ABC062429A526ED009CA9D4 /* Basics */ = {
 			isa = PBXGroup;
 			children = (
+				4AE4B0E129A6701D002641FA /* PostUIView.swift */,
 				4AE52435299F9D41000BE036 /* GradientBackground.swift */,
 				4ABC063929A586A2009CA9D4 /* LaunchUIView.swift */,
 				4AA180D829A3D2AA00EEB2E3 /* TabBarUIView.swift */,
