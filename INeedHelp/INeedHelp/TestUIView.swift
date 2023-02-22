@@ -3,69 +3,44 @@
 //  INeedHelp
 //
 //  Created by ettoreantoniopanasia on 21/02/23.
-//
 
 import SwiftUI
 
 struct TestUIView: View {
+    let likesCount: Int
+    let timeElapsed: TimeInterval
+    
     var body: some View {
-        Prova()
+        HStack {
+            Image(systemName: "heart.fill")
+                .foregroundColor(.red)
+            Text("\(likesCount) Mi piace")
+            Spacer()
+            Text(timeString(timeElapsed: timeElapsed))
+        }
+        .padding()
+    }
+    
+    private func timeString(timeElapsed: TimeInterval) -> String {
+        let formatter = DateComponentsFormatter()
+        formatter.unitsStyle = .abbreviated
+        formatter.allowedUnits = [.second, .minute, .hour, .day]
+        return formatter.string(from: timeElapsed)!
     }
 }
 
-struct Prova: View {
+struct prova: View {
     
-    @State private var showingPopup = false
-    @State private var name = ""
-    @State private var buttonText = "Premi per inserire il nome"
+    let post = Post(likesCount: 23, timeElapsed: 3600)
     
     var body: some View {
-        VStack {
-            Button(action: {
-                self.showingPopup = true
-            }) {
-                Text(buttonText)
-                    .foregroundColor(.white)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(10)
-            }
-            .padding()
-            
-            if showingPopup {
-                ZStack {
-                    Color.white
-                        .opacity(0.5)
-                        .edgesIgnoringSafeArea(.all)
-                    
-                    VStack {
-                        Text("Inserisci il tuo nome")
-                            .font(.title)
-                            .padding()
-                        
-                        TextField("Nome", text: $name)
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .padding()
-                        
-                        Button(action: {
-                            self.buttonText = name
-                            self.showingPopup = false
-                        }) {
-                            Text("Conferma nome")
-                                .foregroundColor(.white)
-                                .padding()
-                                .background(Color.blue)
-                                .cornerRadius(10)
-                        }
-                        .padding()
-                    }
-                    .frame(width: 300, height: 200)
-                    .background(Color.white)
-                    .cornerRadius(20)
-                }
-            }
-        }
+        TestUIView(likesCount: post.likesCount, timeElapsed: post.timeElapsed)
     }
+}
+
+struct Post {
+    let likesCount: Int
+    let timeElapsed: TimeInterval
 }
 
 
