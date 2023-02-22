@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DiscoverUIView: View {
+    @State private var searchText: String = ""
     var body: some View {
         NavigationStack {
             ZStack {
@@ -21,10 +22,8 @@ struct DiscoverUIView: View {
                                 .padding()
                             Spacer()
                         }
-                        HStack {
-                            Text("Barra di ricerca")
-                                .foregroundColor(.white)
-                        }
+                        SearchBar(text: $searchText)
+                            .padding(.horizontal)
                         Spacer()
                         RoundedRectangle(cornerRadius: 35)
                             .fill(Color.white)
@@ -189,6 +188,30 @@ struct DiscoverUIView: View {
                 }
             }
         }
+    }
+}
+
+struct SearchBar: View {
+    @Binding var text: String
+    
+    var body: some View {
+        HStack {
+            Image(systemName: "magnifyingglass")
+                .foregroundColor(.gray)
+            TextField("Search", text: $text)
+                .foregroundColor(.primary)
+            if !text.isEmpty {
+                Button(action: {
+                    self.text = ""
+                }, label: {
+                    Image(systemName: "xmark.circle.fill")
+                        .foregroundColor(.gray)
+                })
+            }
+        }
+        .padding()
+        .background(Color(.systemGray6))
+        .cornerRadius(35)
     }
 }
 

@@ -12,9 +12,9 @@ struct FavouritesUIView: View {
         ZStack {
             GradientBackground()
             VStack {
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                Text("Favourites posts page here")
                     .foregroundColor(Color.white)
-                    .font(.largeTitle)
+                    .font(.title)
             }
         }
     }

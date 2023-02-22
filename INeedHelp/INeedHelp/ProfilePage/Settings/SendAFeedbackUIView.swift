@@ -12,7 +12,7 @@ struct SendAFeedbackUIView: View {
         ZStack {
             GradientBackground()
             VStack {
-                Text("Send a Feedback")
+                Text("Send a Feedback here")
                     .foregroundColor(.white)
             }
         }
