@@ -58,98 +58,130 @@ struct DiscoverUIView: View {
                                     }
                                     .padding(.top, 30)
                                     .padding(.horizontal)
-                                    HStack {
-                                        Spacer()
-                                        RoundedRectangle(cornerRadius: 15)
-                                            .fill(Color.purple)
-                                            .ignoresSafeArea()
-                                            .frame(width: 135, height: 98)
-                                            .overlay(
-                                                VStack {
-                                                    HStack {
-                                                        Text("Food")
-                                                            .font(.largeTitle)
-                                                        Spacer()
+                                    ScrollView(.horizontal) {
+                                        HStack {
+                                            Spacer()
+                                            RoundedRectangle(cornerRadius: 15)
+                                                .fill(Color.purple)
+                                                .ignoresSafeArea()
+                                                .frame(width: 135, height: 98)
+                                                .overlay(
+                                                    VStack {
+                                                        HStack {
+                                                            Text("Food")
+                                                                .font(.largeTitle)
+                                                            Spacer()
+                                                        }
+                                                        HStack {
+                                                            Text("200 posts")
+                                                            Spacer()
+                                                        }
                                                     }
-                                                    HStack {
-                                                        Text("200 posts")
-                                                        Spacer()
+                                                        .foregroundColor(.white)
+                                                        .padding()
+                                                )
+                                            RoundedRectangle(cornerRadius: 15)
+                                                .fill(Color.purple)
+                                                .ignoresSafeArea()
+                                                .frame(width: 135, height: 98)
+                                                .overlay(
+                                                    VStack {
+                                                        HStack {
+                                                            Text("Art")
+                                                                .font(.largeTitle)
+                                                            Spacer()
+                                                        }
+                                                        HStack {
+                                                            Text("50 posts")
+                                                            Spacer()
+                                                        }
                                                     }
-                                                }
-                                                    .foregroundColor(.white)
-                                                    .padding()
-                                            )
-                                        RoundedRectangle(cornerRadius: 15)
-                                            .fill(Color.purple)
-                                            .ignoresSafeArea()
-                                            .frame(width: 135, height: 98)
-                                            .overlay(
-                                                VStack {
-                                                    HStack {
-                                                        Text("Art")
-                                                            .font(.largeTitle)
-                                                        Spacer()
+                                                        .foregroundColor(.white)
+                                                        .padding()
+                                                )
+                                            RoundedRectangle(cornerRadius: 15)
+                                                .fill(Color.purple)
+                                                .ignoresSafeArea()
+                                                .frame(width: 135, height: 98)
+                                                .overlay(
+                                                    VStack {
+                                                        HStack {
+                                                            Text("Sport")
+                                                                .font(.largeTitle)
+                                                            Spacer()
+                                                        }
+                                                        HStack {
+                                                            Text("110 posts")
+                                                            Spacer()
+                                                        }
                                                     }
-                                                    HStack {
-                                                        Text("50 posts")
-                                                        Spacer()
+                                                        .foregroundColor(.white)
+                                                        .padding()
+                                                )
+                                            RoundedRectangle(cornerRadius: 15)
+                                                .fill(Color.purple)
+                                                .ignoresSafeArea()
+                                                .frame(width: 135, height: 98)
+                                                .overlay(
+                                                    VStack {
+                                                        HStack {
+                                                            Text("Law")
+                                                                .font(.largeTitle)
+                                                            Spacer()
+                                                        }
+                                                        HStack {
+                                                            Text("50 posts")
+                                                            Spacer()
+                                                        }
                                                     }
-                                                }
-                                                    .foregroundColor(.white)
-                                                    .padding()
-                                            )
-                                        RoundedRectangle(cornerRadius: 15)
-                                            .fill(Color.purple)
-                                            .ignoresSafeArea()
-                                            .frame(width: 135, height: 98)
-                                            .overlay(
-                                                VStack {
-                                                    HStack {
-                                                        Text("Sport")
-                                                            .font(.largeTitle)
-                                                        Spacer()
-                                                    }
-                                                    HStack {
-                                                        Text("110 posts")
-                                                        Spacer()
-                                                    }
-                                                }
-                                                    .foregroundColor(.white)
-                                                    .padding()
-                                            )
+                                                        .foregroundColor(.white)
+                                                        .padding()
+                                                )
+                                        }
                                     }
                                     HStack {
-                                        Text("Trendings Posts")
+                                        Text("Trending Posts")
                                             .font(.title)
                                         Spacer()
                                     }
                                     .padding(.top, 30)
                                     .padding(.horizontal)
-                                    RoundedRectangle(cornerRadius: 15)
-                                        .fill(Color(UIColor.init(red: 230/255, green: 230/255, blue: 230/255, alpha: 1)))
-                                        .ignoresSafeArea()
-                                        .frame(width: 313, height: 134)
-                                        .overlay(
-                                            VStack {
-                                                HStack {
-                                                    Text("Marco Abbate")
-                                                        .font(.title2)
-                                                        .foregroundColor(Color(UIColor.init(red: 0/255, green: 77/255, blue: 128/255, alpha: 1)))
-                                                        .bold()
-                                                    Spacer()
-                                                }
-                                                HStack {
-                                                    Text("My cat is running everywhere in the house")
-                                                        .font(.title3)
-                                                        .foregroundColor(Color(UIColor.init(red: 0/255, green: 77/255, blue: 128/255, alpha: 1)))
-                                                    Spacer()
-                                                }
-                                                Spacer()
-                                            }
-                                                .foregroundColor(.white)
-                                                .padding()
-                                        )
-                                    Spacer()
+                                    ScrollView(.vertical) {
+                                        VStack {
+                                            RoundedRectangle(cornerRadius: 15)
+                                                .fill(Color(UIColor.init(red: 230/255, green: 230/255, blue: 230/255, alpha: 1)))
+                                                .ignoresSafeArea()
+                                                .frame(width: 385, height: 150)
+                                                .overlay(
+                                                    VStack {
+                                                        PostUIView(authorName: "Marco Abbate",
+                                                                   authorImageName: "fp2",
+                                                                   title: "My cat is running everywhere in the house",
+                                                                   bodyText: "I love my cat, but she's always on the move. She runs up and down the stairs, jumps on the furniture, and even plays with her toys at all hours of the day and night. I'm worried that she's going to hurt herself or break something in the house.",
+                                                                   likesCount: 45,
+                                                                   timestamp: Date().addingTimeInterval(-360),
+                                                                   postCat: "Animals"
+                                                        )
+                                                    }
+                                                )
+                                            RoundedRectangle(cornerRadius: 15)
+                                                .fill(Color(UIColor.init(red: 230/255, green: 230/255, blue: 230/255, alpha: 1)))
+                                                .ignoresSafeArea()
+                                                .frame(width: 385, height: 150)
+                                                .overlay(
+                                                    VStack {
+                                                        PostUIView(authorName: "Martina Farina",
+                                                                   authorImageName: "fp1",
+                                                                   title: "The flowers in my garden are drying up",
+                                                                   bodyText: "I've been taking care of my garden for a few years now and it's always been so beautiful. But this year, the flowers are just not doing well. They're all starting to dry up and wilt away.",
+                                                                   likesCount: 3,
+                                                                   timestamp: Date().addingTimeInterval(-3600),
+                                                                   postCat: "Gardening"
+                                                        )
+                                                    }
+                                                )
+                                        }
+                                    }
                                 }
                                     .padding(.vertical)
                             )
