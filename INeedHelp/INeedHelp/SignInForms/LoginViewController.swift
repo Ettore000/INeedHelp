@@ -64,7 +64,8 @@ struct LoginFormView: View {
                             .frame(width:150, height:70)
                             .padding(.horizontal)
                             .overlay(
-                                NavigationLink(destination: TabBarUIView()) {
+                                NavigationLink(destination: TabBarUIView()
+                                    .navigationBarBackButtonHidden(true)) {
                                     HStack {
                                         Text("Login")
                                             .font(.largeTitle.bold())
@@ -114,7 +115,8 @@ struct LoginFormView: View {
                     HStack {
                         Text("Not registered?")
                             .foregroundColor(.white)
-                        NavigationLink(destination: SignUpViewController()) {
+                        NavigationLink(destination: SignUpViewController()
+                            .navigationBarBackButtonHidden(true)) {
                             HStack {
                                 Text("Sign Up")
                                     .bold()
