@@ -5,115 +5,128 @@
 //  Created by ettoreantoniopanasia on 16/02/23.
 
 import SwiftUI
+import AuthenticationServices
 
 struct LoginFormView: View {
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var isPasswordVisible: Bool = false
-    @State private var continueWith: String = ""
-
+    @State private var showDetails = false
+    
     var body: some View {
-        ZStack {
-            GradientBackground()
-            VStack(spacing:20) {
-                HStack {
-                    Image("Image")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 150, height: 100)
-                }
-                Text("I Need Help")
-                    .font(.system(size:40, weight: .bold, design: .default))
-                    .foregroundColor(.white)
-                TextField("Email", text: $email)
+        NavigationStack {
+            ZStack {
+                GradientBackground()
+                VStack(spacing:20) {
+                    HStack {
+                        Image("Image")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 150, height: 100)
+                    }
+                    Text("I Need Help")
+                        .font(.system(size:40, weight: .bold, design: .default))
+                        .foregroundColor(.white)
+                    TextField("Email", text: $email)
+                        .padding()
+                        .background(Color.white.opacity(0.93))
+                        .cornerRadius(15)
+                    HStack {
+                        if isPasswordVisible {
+                            TextField("Password", text: $password)
+                        } else {
+                            SecureField("Password", text: $password)
+                        }
+                        Button(action: {
+                            isPasswordVisible.toggle()
+                        }) {
+                            Image(systemName: isPasswordVisible ? "eye.fill" : "eye.slash.fill")
+                        }
+                        .padding(.trailing, 8)
+                        .foregroundColor(.gray)
+                    }
                     .padding()
                     .background(Color.white.opacity(0.93))
                     .cornerRadius(15)
-                HStack {
-                    if isPasswordVisible {
-                        TextField("Password", text: $password)
-                    } else {
-                        SecureField("Password", text: $password)
-                    }
-                    Button(action: {
-                        isPasswordVisible.toggle()
-                    }) {
-                        Image(systemName: isPasswordVisible ? "eye.fill" : "eye.slash.fill")
-                    }
-                    .padding(.trailing, 8)
-                    .foregroundColor(.gray)
-                }
-                .padding()
-                .background(Color.white.opacity(0.93))
-                .cornerRadius(15)
-                HStack {
-                    Button(action:{/*azione*/}) {
-                        Text("Forgot password?")
-                            .bold()
-                            .italic()
-                            .underline()
-                            .foregroundColor(.white)
-                    }
-                    Spacer()
-                }
-                HStack {
-                    Button(action: {/*azione*/}) {
-                        Text("Login")
-                            .font(.largeTitle.bold())
-                            .foregroundColor(.white)
-                            .frame(maxWidth: .infinity, minHeight: 44)
-                            .frame(width:150, height:70)
-                            .background(Color.orange)
-                            .cornerRadius(15)
-                            .padding(.horizontal)
-                    }
-                }
-                HStack {
-                    Text("Or")
-                        .foregroundColor(.white)
-                        .bold()
-                }
-                ZStack {
-                    TextField("", text: $continueWith)
-                        .padding()
-                        .background(Color.white.opacity(0.93))
-                        .font(.largeTitle)
-                        .frame(width:200)
-                        .cornerRadius(40)
-                    VStack {
-                        Text("|")
-                    }
                     HStack {
                         Button(action:{/*azione*/}) {
-                            Image("login1")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 60, height: 60)
-                                .padding(.horizontal)
+                            Text("Forgot password?")
+                                .bold()
+                                .italic()
+                                .underline()
+                                .foregroundColor(.white)
                         }
-                        Button(action:{/*azione*/}) {
-                            Image("login2")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 53, height: 53)
-                                .padding(.horizontal)
-                        }
+                        Spacer()
                     }
-                }
-                Spacer()
-                HStack {
-                    Text("Not registered?")
-                        .foregroundColor(.white)
-                    Button(action:{/*azione*/}) {
-                        Text("Sign Up")
-                            .bold()
-                            .italic()
-                            .underline()
+                    HStack {
+                        RoundedRectangle(cornerRadius: 15)
+                            .fill(Color.orange)
+                            .frame(width:150, height:70)
+                            .padding(.horizontal)
+                            .overlay(
+                                NavigationLink(destination: TabBarUIView()) {
+                                    HStack {
+                                        Text("Login")
+                                            .font(.largeTitle.bold())
+                                            .foregroundColor(.white)
+                                    }
+                                }
+                            )
+                    }
+                    HStack {
+                        Text("Or")
                             .foregroundColor(.white)
+                            .bold()
+                    }
+                    ZStack {
+                        VStack {
+                            // Pulsante "Continue with Apple"
+                            SignInWithAppleButton(
+                                onRequest: { request in
+                                    // Imposta le richieste di accesso necessarie qui
+                                },
+                                onCompletion: { result in
+                                    // Gestisci il risultato del login con Apple qui
+                                }
+                            )
+                            .frame(width: 280, height: 50)
+                            .padding()
+                            
+                            // Pulsante "Continue with Google"
+                            Button(action: {
+                            }) {
+                                HStack {
+                                    Image("google")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: .infinity, height: 20)
+                                    Text("Sign in with Google")
+                                }
+                            }
+                            .frame(width: 280, height: 50)
+                            .foregroundColor(.white)
+                            .background(Color.black)
+                            .cornerRadius(10)
+                            .bold()
+                        }
+                    }
+                    Spacer()
+                    HStack {
+                        Text("Not registered?")
+                            .foregroundColor(.white)
+                        NavigationLink(destination: SignUpViewController()) {
+                            HStack {
+                                Text("Sign Up")
+                                    .bold()
+                                    .italic()
+                                    .underline()
+                                    .foregroundColor(.white)
+                            }
+                        }
                     }
                 }
+                .padding()
             }
-            .padding()
         }
     }
 }
@@ -121,6 +134,6 @@ struct LoginFormView: View {
 struct LoginFormView_Previews: PreviewProvider {
     static var previews: some View {
         LoginFormView()
-
+        
     }
 }
