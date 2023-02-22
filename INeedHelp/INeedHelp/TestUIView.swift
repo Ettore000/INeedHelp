@@ -10,6 +10,7 @@ struct TestUIView: View {
     var body: some View {
         Text("Prova")
         Text("Altra prova")
+        Text("Altra ancora")
     }
 }
 
