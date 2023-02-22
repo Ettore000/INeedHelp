@@ -10,8 +10,13 @@ struct TabBarUIView: View {
     var body: some View {
         TabView {
             NavigationStack {
-                layoutmark()
-                DiscoverUIView()
+                ZStack {
+                    DiscoverUIView()
+                    VStack {
+                        layoutmark()
+                    }
+                }
+                Spacer()
             }
             .onTapGesture {}
             .tabItem {
@@ -19,15 +24,25 @@ struct TabBarUIView: View {
                     .foregroundColor(.black)
             }
             NavigationStack {
-                layoutmark()
-                NewUIView()
+                ZStack {
+                    NewUIView()
+                    VStack {
+                        layoutmark()
+                    }
+                }
+                Spacer()
             }.onTapGesture {}
                 .tabItem {
                     Label("New", systemImage: "plus.circle")
                 }
             NavigationStack {
-                layoutmark()
-                CategoriesUIView()
+                ZStack {
+                    CategoriesUIView()
+                    VStack {
+                        layoutmark()
+                    }
+                }
+                Spacer()
             }.onTapGesture {}
                 .tabItem {
                     Label("Categories", systemImage: "circle.hexagongrid.circle")
@@ -58,7 +73,6 @@ struct ImageFieldView: View {
 struct layoutmark: View {
     var body: some View {
         ZStack {
-            GradientBackground()
             VStack {
                 HStack {
                     Spacer()
