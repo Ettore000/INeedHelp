@@ -22,7 +22,7 @@ struct Page1SwiftUIView: View {
                             .frame(width: 161, height: 500)
                     }
                     .rotationEffect(Angle(degrees: -302))
-                    .position(x: 205, y: 240)
+                    .position(x: 205, y: 260)
                 }
                 RoundedRectangle(cornerRadius: 48)
                     .foregroundColor(.white)
@@ -42,12 +42,12 @@ struct Page1SwiftUIView: View {
                 Text("Welcome to")
                     .font(.title)
                     .foregroundColor(Color(red: 0.445, green: 0.552, blue: 0.999))
-                    .position(x: 120, y: 530)
+                    .position(x: 120, y: 540)
                 Text("I Need Help")
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(Color(hue: 0.742, saturation: 0.566, brightness: 0.945))
-                    .position(x: 70, y: 530)
+                    .position(x: 70, y: 540)
             }
             VStack {
                 Text("With us you can")
@@ -68,6 +68,7 @@ struct Page1SwiftUIView: View {
             }
         }
         .clipped()
+        .ignoresSafeArea()
     }
 }
 

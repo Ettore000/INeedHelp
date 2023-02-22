@@ -37,12 +37,13 @@ struct Page3SwiftUIView: View {
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color(red: 0.445, green: 0.552, blue: 0.999))
                         .position(x: 195, y: 400)
+                    
                     Text("There we always be an expert ready to answer!")
                         .font(.title)
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
                         .foregroundColor(Color(red: 0.445, green: 0.552, blue: 0.999))
-                        .position(x: 150 , y: 100)
+//                        .position(x: 150 , y: 130)
                         .frame(width: 300, height: 350)
                 }
             }
