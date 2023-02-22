@@ -149,6 +149,7 @@ struct DiscoverUIView: View {
                                                 .foregroundColor(.white)
                                                 .padding()
                                         )
+                                    Spacer()
                                 }
                                     .padding(.vertical)
                             )
