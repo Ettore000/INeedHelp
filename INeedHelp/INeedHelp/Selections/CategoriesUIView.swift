@@ -9,7 +9,33 @@ import SwiftUI
 
 struct CategoriesUIView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            ZStack {
+                GradientBackground()
+                ZStack {
+                    VStack {
+                        HStack {
+                            Text("Categories")
+                                .font(.largeTitle)
+                                .foregroundColor(.white)
+                                .padding()
+                            Spacer()
+                        }
+                        HStack {
+                            Text("Barra di ricerca")
+                                .foregroundColor(.white)
+                        }
+                        Spacer()
+                        RoundedRectangle(cornerRadius: 35)
+                        .fill(Color.white)
+                        .ignoresSafeArea()
+                        .overlay(
+                        Text("Ciao")
+                        )
+                    }
+                }
+            }
+        }
     }
 }
 

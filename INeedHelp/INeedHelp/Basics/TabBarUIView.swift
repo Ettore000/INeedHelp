@@ -16,7 +16,6 @@ struct TabBarUIView: View {
                         layoutmark()
                     }
                 }
-                Spacer()
             }
             .onTapGesture {}
             .tabItem {
@@ -30,7 +29,6 @@ struct TabBarUIView: View {
                         layoutmark()
                     }
                 }
-                Spacer()
             }.onTapGesture {}
                 .tabItem {
                     Label("New", systemImage: "plus.circle")
@@ -42,7 +40,6 @@ struct TabBarUIView: View {
                         layoutmark()
                     }
                 }
-                Spacer()
             }.onTapGesture {}
                 .tabItem {
                     Label("Categories", systemImage: "circle.hexagongrid.circle")
@@ -77,7 +74,8 @@ struct layoutmark: View {
                 HStack {
                     Spacer()
                     ImageFieldView()
-                        .padding()
+                        .padding(.vertical, 10)
+                        .padding(.horizontal)
                 }
                 Spacer()
             }
