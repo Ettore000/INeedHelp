@@ -38,7 +38,7 @@ struct LaunchUIView: View {
                         }
                         .padding(.horizontal)
                         Spacer()
-                        NavigationLink(destination: TabBarUIView().navigationBarBackButtonHidden(true)) {
+                        NavigationLink(destination: LoginFormView().navigationBarBackButtonHidden(true)) {
                             Text("Skip")
                                 .foregroundColor(Color(hue: 0.742, saturation: 0.566, brightness: 0.945))
                                 .bold()
