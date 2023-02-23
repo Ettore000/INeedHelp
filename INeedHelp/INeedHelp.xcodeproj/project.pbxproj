@@ -217,7 +217,6 @@
 			children = (
 				4AA180E629A3DAAC00EEB2E3 /* ProfileUIView.swift */,
 				4ABC061929A4E59A009CA9D4 /* FavouritesUIView.swift */,
-				4ABC060F29A4B736009CA9D4 /* CoursesUIView.swift */,
 				C3DB13A529A756BE009EEEDC /* CoursesViewController.swift */,
 				C3DB13A729A756E8009EEEDC /* CoursesShopViewControler.swift */,
 				4ABC060D29A4B716009CA9D4 /* SettingsUIView.swift */,
@@ -250,6 +249,7 @@
 			children = (
 				4ABC061B29A4E6D2009CA9D4 /* DiscoverUIView.swift */,
 				4ABC063529A5383E009CA9D4 /* NewUIView.swift */,
+				4ABC060F29A4B736009CA9D4 /* CoursesUIView.swift */,
 				4ABC061D29A4E6E5009CA9D4 /* CategoriesUIView.swift */,
 			);
 			path = Selections;

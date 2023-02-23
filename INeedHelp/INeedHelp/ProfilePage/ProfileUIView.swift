@@ -147,7 +147,7 @@ struct ProfileUIView: View {
                                     }
                                 )
                         }
-                        NavigationLink(destination: CoursesUIView()) {
+                        NavigationLink(destination: CoursesViewController()) {
                             RoundedRectangle(cornerRadius: cornerRadius)
                                 .fill(Color.white)
                                 .opacity(opacity)
