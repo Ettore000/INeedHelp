@@ -12,6 +12,7 @@ struct CoursesUIView: View {
         ZStack{
             RoundedRectangle(cornerRadius: 30).padding(.top).frame(width: 400, height: 1600).foregroundColor(Color(red: 0.674, green: 0.432, blue: 0.972)).position(x: -40, y: 30)
             Spacer()
+            ScrollView(.vertical) {
             VStack {
                 HStack {
                     Text("Categories")
@@ -30,12 +31,12 @@ struct CoursesUIView: View {
                     .frame(width:234, height:70)
                     .background(Color.white.opacity(0.5).gradient)
                     .cornerRadius(15)
-                    .padding(.horizontal).position(x:200,y:-60)
+                    .padding(.horizontal).position(x:200,y:70)
                 Image("sweet")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 100, height: 100)
-                    .position(x:80,y:-250)
+                    .position(x:80,y:-10)
                 VStack{
                     Text("Italian cuisine")
                         .font(.headline)
@@ -44,12 +45,12 @@ struct CoursesUIView: View {
                         .frame(width:234, height:70)
                         .background(Color.white.opacity(0.5).gradient)
                         .cornerRadius(15)
-                        .padding(.horizontal).position(x:200,y:-320)
+                        .padding(.horizontal).position(x:200,y:30)
                     Image("Pizza")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 85, height: 135)
-                        .position(x:80,y:-380)
+                        .position(x:80,y:-50)
                     VStack{
                         Text("Fast food")
                             .font(.headline)
@@ -58,12 +59,12 @@ struct CoursesUIView: View {
                             .frame(width:234, height:70)
                             .background(Color.white.opacity(0.5).gradient)
                             .cornerRadius(15)
-                            .padding(.horizontal).position(x:200,y:-310)
+                            .padding(.horizontal).position(x:200,y:-30)
                         Image("fastfood")
                             .resizable()
                             .scaledToFit()
                             .frame(width: 115, height: 118)
-                            .position(x:80,y:-330)
+                            .position(x:80,y:-110)
                         VStack{
                             Text("Fruit")
                                 .font(.headline)
@@ -72,12 +73,12 @@ struct CoursesUIView: View {
                                 .frame(width:234, height:70)
                                 .background(Color.white.opacity(0.5).gradient)
                                 .cornerRadius(15)
-                                .padding(.horizontal).position(x:200,y:-220)
+                                .padding(.horizontal).position(x:200,y:-70)
                             Image("frutta")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 115, height: 118)
-                                .position(x:80,y:-230)
+                                .position(x:80,y:-150)
                             VStack{
                                 Text("Vegetables")
                                     .font(.headline)
@@ -91,7 +92,7 @@ struct CoursesUIView: View {
                                     .resizable()
                                     .scaledToFit()
                                     .frame(width: 100, height: 100)
-                                    .position(x:80,y:-130)
+                                    .position(x:80,y:-200)
                                 VStack{
                                     Text("Oriental cuisine")
                                         .font(.headline)
@@ -100,17 +101,17 @@ struct CoursesUIView: View {
                                         .frame(width:234, height:70)
                                         .background(Color.white.opacity(0.5).gradient)
                                         .cornerRadius(15)
-                                        .padding(.horizontal).position(x:200,y:-10)
+                                        .padding(.horizontal).position(x:200,y:-120)
                                     Image("asiatic")
                                         .resizable()
                                         .scaledToFit()
                                         .frame(width: 100, height: 80)
-                                        .position(x:80,y:-19)
+                                        .position(x:80,y:-200)
                                 }
                             }
                         }
                     }
-                    
+                }
                 }
                 /*Image("sweet")
                     .overlay(
