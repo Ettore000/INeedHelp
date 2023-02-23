@@ -67,7 +67,7 @@ struct LaunchUIView: View {
             .animation(.easeInOut(duration: 0.3))
             .transition(.slide)
             .background(
-                NavigationLink(destination: TabBarUIView().navigationBarBackButtonHidden(true), isActive: $shouldShowNewView) {
+                NavigationLink(destination: LoginFormView().navigationBarBackButtonHidden(true), isActive: $shouldShowNewView) {
                             EmptyView()
                         }
                     )
