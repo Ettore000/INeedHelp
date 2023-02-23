@@ -85,7 +85,7 @@ struct SignUpViewController: View {
                             .frame(width:150, height:70)
                             .padding(.horizontal)
                             .overlay(
-                                NavigationLink(destination: TabBarUIView()
+                                NavigationLink(destination: CongratulationView()
                                     .navigationBarBackButtonHidden(true)) {
                                     HStack {
                                         Text("Sign Up")
