@@ -26,7 +26,6 @@ struct CoursesUIView: View {
                 }.padding()
                 Spacer()
                 Spacer()
-                
                 Text("Sweets")
                     .font(.headline)
                     .foregroundColor(.black)

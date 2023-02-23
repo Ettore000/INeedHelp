@@ -19,7 +19,7 @@ struct LoginFormView: View {
                 GradientBackground()
                 VStack(spacing:20) {
                     HStack {
-                        Image("Image")
+                        Image("logo")
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 150, height: 100)
