@@ -23,7 +23,7 @@ struct Page5SwiftUIView: View {
                     .position(x: 260, y: 340)
             }
             ZStack {
-                Image(systemName: "iphone").resizable().imageScale(.large).foregroundColor(.black).frame(width: 202, height: 450).position(x: 190, y: 315)
+                Image("screen2").resizable().imageScale(.large).foregroundColor(.black).frame(width: 202, height: 450).position(x: 190, y: 315)
                 
             }.rotationEffect(Angle(degrees: 10))
             ZStack {
