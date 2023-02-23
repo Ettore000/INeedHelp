@@ -35,7 +35,7 @@ struct TabBarUIView: View {
                 }
             NavigationStack {
                 ZStack {
-                    CategoriesUIView()
+                    CoursesUIView()
                     VStack {
                         layoutmark()
                     }
