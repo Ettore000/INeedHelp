@@ -12,8 +12,7 @@ struct ricerca {
     let nome : String
 }
 struct CoursesViewController: View {
-    
-    @State private var cerca: String = ""
+    @State private var searchText: String = ""
     var body: some View {
         ZStack {
             GradientBackground()
@@ -35,10 +34,8 @@ struct CoursesViewController: View {
                     Spacer()
                 }
                 VStack{
-                    TextField("Search", text: $cerca)
-                        .padding()
-                        .background(Color.white.opacity(0.50))
-                        .cornerRadius(15)
+                    SearchBar(text: $searchText)
+                        .padding(.horizontal)
                     Spacer()
                 }
                 
@@ -126,6 +123,30 @@ struct CoursesViewController: View {
                     }
                 }
             }
+        }
+    }
+    
+    struct SearchBar: View {
+        @Binding var text: String
+        
+        var body: some View {
+            HStack {
+                Image(systemName: "magnifyingglass")
+                    .foregroundColor(.gray)
+                TextField("Search", text: $text)
+                    .foregroundColor(.primary)
+                if !text.isEmpty {
+                    Button(action: {
+                        self.text = ""
+                    }, label: {
+                        Image(systemName: "xmark.circle.fill")
+                            .foregroundColor(.gray)
+                    })
+                }
+            }
+            .padding()
+            .background(Color(.systemGray6))
+            .cornerRadius(35)
         }
     }
     
