@@ -36,6 +36,7 @@
 		4AE52436299F9D41000BE036 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52435299F9D41000BE036 /* GradientBackground.swift */; };
 		4AE52438299F9DA8000BE036 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52437299F9DA8000BE036 /* LoginViewController.swift */; };
 		4AE5243A299F9DE0000BE036 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52439299F9DE0000BE036 /* SignUpViewController.swift */; };
+		C308E0D029A7722700F93050 /* CongratulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C308E0CF29A7722700F93050 /* CongratulationView.swift */; };
 		C3DB13A629A756BE009EEEDC /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DB13A529A756BE009EEEDC /* CoursesViewController.swift */; };
 		C3DB13A829A756E8009EEEDC /* CoursesShopViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DB13A729A756E8009EEEDC /* CoursesShopViewControler.swift */; };
 /* End PBXBuildFile section */
@@ -90,6 +91,7 @@
 		4AE52435299F9D41000BE036 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		4AE52437299F9DA8000BE036 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4AE52439299F9DE0000BE036 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C308E0CF29A7722700F93050 /* CongratulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationView.swift; sourceTree = "<group>"; };
 		C3DB13A529A756BE009EEEDC /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		C3DB13A729A756E8009EEEDC /* CoursesShopViewControler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesShopViewControler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -196,6 +198,7 @@
 			children = (
 				4AE52437299F9DA8000BE036 /* LoginViewController.swift */,
 				4AE52439299F9DE0000BE036 /* SignUpViewController.swift */,
+				C308E0CF29A7722700F93050 /* CongratulationView.swift */,
 			);
 			path = SignInForms;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3DB13A829A756E8009EEEDC /* CoursesShopViewControler.swift in Sources */,
+				C308E0D029A7722700F93050 /* CongratulationView.swift in Sources */,
 				4ABC061E29A4E6E5009CA9D4 /* CategoriesUIView.swift in Sources */,
 				4ABC063029A5302C009CA9D4 /* RateOurAppUIView.swift in Sources */,
 				4AE4B0E229A6701D002641FA /* PostUIView.swift in Sources */,
