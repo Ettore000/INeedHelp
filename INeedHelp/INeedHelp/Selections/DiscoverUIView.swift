@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DiscoverUIView: View {
-    @State private var searchText: String = ""
+    @State private var searchText1: String = ""
     var body: some View {
         NavigationStack {
             ZStack {
@@ -22,7 +22,7 @@ struct DiscoverUIView: View {
                                 .padding()
                             Spacer()
                         }
-                        SearchBar(text: $searchText)
+                        SearchBar(text: $searchText1)
                             .padding(.horizontal)
                         Spacer()
                         RoundedRectangle(cornerRadius: 35)
