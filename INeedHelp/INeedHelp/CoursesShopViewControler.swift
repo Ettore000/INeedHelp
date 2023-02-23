@@ -1,49 +1,19 @@
 //
-//  CoursesViewController.swift
+//  CoursesShopViewControler.swift
 //  INeedHelp
 //
-//  Created by ettoreantoniopanasia on 21/02/23.
+//  Created by antonioperna on 22/02/23.
 //
 
 import SwiftUI
 
-struct ricerca {
-    let categoria : [String]
-    let nome : String
-}
-struct CoursesViewController: View {
-    
-    @State private var cerca: String = ""
+struct CoursesShopViewControler: View {
     var body: some View {
         ZStack {
             GradientBackground()
-            VStack {
-                Spacer()
-                Spacer()
-                HStack{
-                    Text("Find a best")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .padding(.horizontal)
-                    Spacer()
-                }
-                HStack{
-                    Text("course for you!")
-                        .font(.title)
-                        .fontWeight(.bold)
-                        .padding(.horizontal)
-                    Spacer()
-                }
-                VStack{
-                    TextField("Search", text: $cerca)
-                        .padding()
-                        .background(Color.white.opacity(0.50))
-                        .cornerRadius(15)
-                    Spacer()
-                }
-                
-            }.padding()
+            }
             ZStack {
+                
                 
                 VStack{ RoundedRectangle(cornerRadius: 34).foregroundColor(Color.orange).frame(width: 351, height: 77).position(x: 180, y: 225)
                 }
@@ -129,9 +99,15 @@ struct CoursesViewController: View {
         }
     }
     
-    struct CoursesViewController_Previews: PreviewProvider {
+    struct CoursesShopViewController_Previews: PreviewProvider {
         static var previews: some View {
             CoursesViewController()
         }
+    }
+
+
+struct CoursesShopViewControler_Previews: PreviewProvider {
+    static var previews: some View {
+        CoursesShopViewControler()
     }
 }
