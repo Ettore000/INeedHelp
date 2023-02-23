@@ -100,7 +100,7 @@ struct LoginFormView: View {
                                     Image("google")
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: .infinity, height: 20)
+                                        .frame(width: 20, height: 20)
                                     Text("Sign in with Google")
                                 }
                             }
