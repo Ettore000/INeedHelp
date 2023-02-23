@@ -6,52 +6,46 @@
 //
 import SwiftUI
 
-struct TabBarViewController: View {
+struct TabBarUIView: View {
     var body: some View {
         TabView {
             NavigationStack {
-                Text("Discover")
-                    .navigationBarTitle("Discover", displayMode: .automatic)
-                    .toolbar {
-                        ToolbarItem {
-                            ImageFieldView()
-                        }
+                ZStack {
+                    DiscoverUIView()
+                    VStack {
+                        layoutmark()
                     }
+                }
             }
             .onTapGesture {}
-                .tabItem {
-                    Label("Discover", systemImage: "globe")
-                }
+            .tabItem {
+                Label("Discover", systemImage: "globe")
+                    .foregroundColor(.black)
+            }
             NavigationStack {
-                VStack {
-                    HStack {
-                        
+                ZStack {
+                    NewUIView()
+                    VStack {
+                        layoutmark()
                     }
                 }
-                Text("New")
-                    .navigationBarTitle("New", displayMode: .automatic)
-                    .toolbar {
-                        ToolbarItem {
-                            ImageFieldView()
-                        }
-                    }
             }.onTapGesture {}
                 .tabItem {
                     Label("New", systemImage: "plus.circle")
                 }
             NavigationStack {
-                Text("Categories")
-                    .navigationBarTitle("Categories", displayMode: .automatic)
-                    .toolbar {
-                        ToolbarItem {
-                            ImageFieldView()
-                        }
+                ZStack {
+                    CategoriesUIView()
+                    VStack {
+                        layoutmark()
                     }
+                }
             }.onTapGesture {}
                 .tabItem {
                     Label("Categories", systemImage: "circle.hexagongrid.circle")
                 }
         }
+        .accentColor(Color(UIColor.init(red: 172/255, green: 110/255, blue: 248/255, alpha: 1)))
     }
 }
 
@@ -70,18 +64,33 @@ struct ImageFieldView: View {
                     ImageDetailView()
                 }
         }
-        
+    }
+}
+
+struct layoutmark: View {
+    var body: some View {
+        ZStack {
+            VStack {
+                HStack {
+                    Spacer()
+                    ImageFieldView()
+                        .padding(.vertical, 10)
+                        .padding(.horizontal)
+                }
+                Spacer()
+            }
+        }
     }
 }
 
 struct ImageDetailView: View {
     var body: some View {
-        ProfileViewController()
+        ProfileUIView()
     }
 }
 
-struct TabBarViewController_Previews: PreviewProvider {
+struct TabBarUIView_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarViewController()
+        TabBarUIView()
     }
 }

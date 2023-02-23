@@ -1,2 +1,5 @@
+# Ignora i file .DS_Store generati da macOS
 .DS_Store
-INeedHelp/INeedHelp.xcodeproj/project.xcworkspace/xcuserdata/ettoreantoniopanasia.xcuserdatad/UserInterfaceState.xcuserstate
+
+# Ignora i file .xcuserstate generati da Xcode
+*.xcuserstate

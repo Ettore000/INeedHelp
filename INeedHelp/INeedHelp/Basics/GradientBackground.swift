@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-import SwiftUI
-
 struct GradientBackground: View {
     var body: some View {
         LinearGradient(
@@ -28,11 +26,14 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+/*
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
-}
+ */
+
 
 struct GradientBackground_Previews: PreviewProvider {
     static var previews: some View {

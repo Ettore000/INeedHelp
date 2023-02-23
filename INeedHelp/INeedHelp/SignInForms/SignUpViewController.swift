@@ -1,0 +1,110 @@
+//
+//  SignUpViewController.swift
+//  INeedHelp
+//
+//  Created by ettoreantoniopanasia on 16/02/23.
+//
+
+import SwiftUI
+
+struct SignUpViewController: View {
+    @State private var name: String = ""
+    @State private var surname: String = ""
+    @State private var age: String = ""
+    @State private var type: String = ""
+    @State private var email: String = ""
+    @State private var password: String = ""
+    @State private var confirmPassword: String = ""
+    
+    var body: some View {
+        NavigationStack {
+            ZStack {
+                GradientBackground()
+                VStack(spacing:20) {
+                    Text("Sign Up")
+                        .font(.system(size:40, weight: .bold, design: .default))
+                        .foregroundColor(.white)
+                    TextField("Name*", text: $name)
+                        .padding()
+                        .background(Color.white.opacity(0.93))
+                        .cornerRadius(15)
+                    TextField("Surname", text: $surname)
+                        .padding()
+                        .background(Color.white.opacity(0.93))
+                        .cornerRadius(15)
+                    TextField("Age", text: $age)
+                        .padding()
+                        .background(Color.white.opacity(0.93))
+                        .cornerRadius(15)
+                    TextField("Email*", text: $email)
+                        .padding()
+                        .background(Color.white.opacity(0.93))
+                        .cornerRadius(15)
+                    VStack {
+                        Text("You are an:")
+                            .foregroundColor(.white)
+                            .bold()
+                        HStack {
+                            Button(action: {/*azione*/}) {
+                                Text("Asker")
+                                    .padding()
+                                    .background(Color.white.opacity(0.93))
+                                    .foregroundColor(.black)
+                                    .cornerRadius(15)
+                            }
+                            Text("Or")
+                                .padding()
+                                .foregroundColor(.white)
+                            Button(action: {/*azione*/}) {
+                                Text("Expert")
+                                    .padding()
+                                    .background(Color.white.opacity(0.93))
+                                    .foregroundColor(.black)
+                                    .cornerRadius(15)
+                            }
+                        }
+                    }
+                    TextField("Password*", text: $password)
+                        .padding()
+                        .background(Color.white.opacity(0.93))
+                        .cornerRadius(15)
+                    TextField("Confirm password*", text: $confirmPassword)
+                        .padding()
+                        .background(Color.white.opacity(0.93))
+                        .cornerRadius(15)
+                    HStack {
+                        Text("* Obligatory")
+                            .bold()
+                            .italic()
+                            .foregroundColor(.white)
+                        Spacer()
+                    }
+                    HStack {
+                        RoundedRectangle(cornerRadius: 15)
+                            .fill(Color.orange)
+                            .frame(width:150, height:70)
+                            .padding(.horizontal)
+                            .overlay(
+                                NavigationLink(destination: TabBarUIView()
+                                    .navigationBarBackButtonHidden(true)) {
+                                    HStack {
+                                        Text("Sign Up")
+                                            .font(.largeTitle.bold())
+                                            .foregroundColor(.white)
+                                    }
+                                }
+                            )
+                    }
+                }
+                .padding()
+            }
+        }
+    }
+}
+
+struct SignUpViewController_Previews: PreviewProvider {
+    static var previews: some View {
+        SignUpViewController()
+    }
+}
+
