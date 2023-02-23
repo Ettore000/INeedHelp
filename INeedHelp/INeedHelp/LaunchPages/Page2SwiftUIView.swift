@@ -16,20 +16,19 @@ struct Page2SwiftUIView: View {
                     .frame(width: 172, height: 489)
                     .position(x: 320, y: 180)
             }
-            ZStack {
+            VStack {
                 RoundedRectangle(cornerRadius: 34)
                     .foregroundColor(Color(red: 0.2196078431372549, green: 0.32941176470588235, blue: 0.48627450980392156))
                     .frame(width: 130, height: 442)
                     .position(x: 180, y: 320)
             }
-            ZStack {
-                Image(systemName: "iphone.gen1")
+            VStack {
+                Image("screen1")
                     .resizable()
                     .imageScale(.large)
                     .foregroundColor(.black)
                     .frame(width: 202, height: 415)
-                    .position(x: 190, y: 315)
-                
+                    .position(x: 180, y: 320)
             }
             .rotationEffect(Angle(degrees: -10))
             ZStack{
