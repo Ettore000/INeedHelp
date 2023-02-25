@@ -33,6 +33,7 @@
 		4ABC063629A5383E009CA9D4 /* NewUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC063529A5383E009CA9D4 /* NewUIView.swift */; };
 		4ABC063A29A586A2009CA9D4 /* LaunchUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ABC063929A586A2009CA9D4 /* LaunchUIView.swift */; };
 		4ADD1D0429AABB1900C5962C /* CategoriesPostUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADD1D0329AABB1900C5962C /* CategoriesPostUIView.swift */; };
+		4ADD1D0729AAC79E00C5962C /* FoodUIVew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADD1D0629AAC79E00C5962C /* FoodUIVew.swift */; };
 		4AE4B0E229A6701D002641FA /* PostUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE4B0E129A6701D002641FA /* PostUIView.swift */; };
 		4AE52436299F9D41000BE036 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52435299F9D41000BE036 /* GradientBackground.swift */; };
 		4AE52438299F9DA8000BE036 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE52437299F9DA8000BE036 /* LoginViewController.swift */; };
@@ -87,6 +88,7 @@
 		4ABC063529A5383E009CA9D4 /* NewUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUIView.swift; sourceTree = "<group>"; };
 		4ABC063929A586A2009CA9D4 /* LaunchUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchUIView.swift; sourceTree = "<group>"; };
 		4ADD1D0329AABB1900C5962C /* CategoriesPostUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesPostUIView.swift; sourceTree = "<group>"; };
+		4ADD1D0629AAC79E00C5962C /* FoodUIVew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodUIVew.swift; sourceTree = "<group>"; };
 		4AE4B0E129A6701D002641FA /* PostUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostUIView.swift; sourceTree = "<group>"; };
 		4AE52435299F9D41000BE036 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
 		4AE52437299F9DA8000BE036 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				4ABC063129A5335D009CA9D4 /* TestUIView.swift */,
 				4ABC062429A526ED009CA9D4 /* Basics */,
 				4ABC062729A528C1009CA9D4 /* ProfilePage */,
+				4ADD1D0529AAC76900C5962C /* Categories */,
 				4ABC062C29A52DBB009CA9D4 /* Selections */,
 				4ABC062629A527F2009CA9D4 /* LaunchPages */,
 				4ABC062529A527B6009CA9D4 /* SignInForms */,
@@ -253,6 +256,14 @@
 				4ABC061D29A4E6E5009CA9D4 /* CategoriesUIView.swift */,
 			);
 			path = Selections;
+			sourceTree = "<group>";
+		};
+		4ADD1D0529AAC76900C5962C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4ADD1D0629AAC79E00C5962C /* FoodUIVew.swift */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,6 +418,7 @@
 				4AA180E529A3D78400EEB2E3 /* Page5SwiftUIView.swift in Sources */,
 				4AE5243A299F9DE0000BE036 /* SignUpViewController.swift in Sources */,
 				4ABC060E29A4B716009CA9D4 /* SettingsUIView.swift in Sources */,
+				4ADD1D0729AAC79E00C5962C /* FoodUIVew.swift in Sources */,
 				4AA180E129A3D76900EEB2E3 /* Page1SwiftUIView.swift in Sources */,
 				4ABC063229A5335D009CA9D4 /* TestUIView.swift in Sources */,
 				4ABC061A29A4E59A009CA9D4 /* FavouritesUIView.swift in Sources */,

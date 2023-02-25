@@ -14,26 +14,40 @@ struct CategoriesPostUIView: View {
     
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 20)
+            RoundedRectangle(cornerRadius: 35)
                 .fill(Color.white)
-                .shadow(radius: 5)
+                .shadow(radius: 10)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 35)
+                        .stroke(Color.gray, lineWidth: 1)
+                )
             VStack {
                 Image(imageName)
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .padding(20)
-                Text(title)
-                    .font(.headline)
-                    .padding(.top, 10)
-                Spacer()
-                HStack {
-                    Image(systemName: "person.2")
-                    Text("\(subscribers) subscribers")
-                        .font(.footnote)
-                }
-                .padding(.bottom, 10)
-                .padding(.trailing, 10)
-                .foregroundColor(.gray)
+                    .scaledToFill()
+                    .frame(width: 400, height: 200)
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                    .overlay(
+                        VStack {
+                            Spacer()
+                            Text(title)
+                                .font(.system(size: 80))
+                                .padding(.top, 10)
+                                .foregroundColor(.white)
+                                .bold()
+                            Spacer()
+                            HStack {
+                                Image(systemName: "person.2")
+                                Text("\(subscribers) subscribers")
+                                    .font(.title3)
+                            }
+                            .padding(.bottom, 10)
+                            .padding(.trailing, 10)
+                            .foregroundColor(.white)
+                            .font(.largeTitle)
+                            .bold()
+                        }
+                    )
             }
         }
     }
@@ -44,7 +58,7 @@ struct CategoriesPostUIView_Previews: PreviewProvider {
         ZStack {
             GradientBackground()
             VStack {
-                CategoriesPostUIView(imageName: "food", title: "Title", subscribers: 123)
+                CategoriesPostUIView(imageName: "food", title: "Food", subscribers: 123)
                     .frame(width: 400, height: 200)
                     .opacity(0.9)
             }

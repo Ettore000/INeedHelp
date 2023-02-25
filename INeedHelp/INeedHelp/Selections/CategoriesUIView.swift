@@ -22,16 +22,16 @@ struct CategoriesUIView: View {
                             Spacer()
                         }
                         ScrollView(.vertical) {
-                            CategoriesPostUIView(imageName: "fp1", title: "Title", subscribers: 123)
+                            CategoriesPostUIView(imageName: "food", title: "Food", subscribers: 122000)
                                 .frame(width: 400, height: 200)
                                 .opacity(0.9)
-                            CategoriesPostUIView(imageName: "fp1", title: "Title", subscribers: 123)
+                            CategoriesPostUIView(imageName: "home", title: "Home", subscribers: 23000)
                                 .frame(width: 400, height: 200)
                                 .opacity(0.9)
-                            CategoriesPostUIView(imageName: "fp1", title: "Title", subscribers: 123)
+                            CategoriesPostUIView(imageName: "clothes", title: "Clothes", subscribers: 3000)
                                 .frame(width: 400, height: 200)
                                 .opacity(0.9)
-                            CategoriesPostUIView(imageName: "fp1", title: "Title", subscribers: 123)
+                            CategoriesPostUIView(imageName: "car", title: "Cars", subscribers: 123)
                                 .frame(width: 400, height: 200)
                                 .opacity(0.9)
                         }
