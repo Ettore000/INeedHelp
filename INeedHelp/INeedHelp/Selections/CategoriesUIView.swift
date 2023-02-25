@@ -21,17 +21,20 @@ struct CategoriesUIView: View {
                                 .padding()
                             Spacer()
                         }
-                        HStack {
-                            Text("Barra di ricerca")
-                                .foregroundColor(.white)
+                        ScrollView(.vertical) {
+                            CategoriesPostUIView(imageName: "fp1", title: "Title", subscribers: 123)
+                                .frame(width: 400, height: 200)
+                                .opacity(0.9)
+                            CategoriesPostUIView(imageName: "fp1", title: "Title", subscribers: 123)
+                                .frame(width: 400, height: 200)
+                                .opacity(0.9)
+                            CategoriesPostUIView(imageName: "fp1", title: "Title", subscribers: 123)
+                                .frame(width: 400, height: 200)
+                                .opacity(0.9)
+                            CategoriesPostUIView(imageName: "fp1", title: "Title", subscribers: 123)
+                                .frame(width: 400, height: 200)
+                                .opacity(0.9)
                         }
-                        Spacer()
-                        RoundedRectangle(cornerRadius: 35)
-                        .fill(Color.white)
-                        .ignoresSafeArea()
-                        .overlay(
-                        Text("Ciao")
-                        )
                     }
                 }
             }

@@ -7,13 +7,13 @@
 import SwiftUI
 
 struct PostUIView: View {
-    let authorName: String
-    let authorImageName: String
-    let title: String
-    let bodyText: String
-    let likesCount: Int
-    let timestamp: Date
-    let postCat: String
+    var authorName: String
+    var authorImageName: String
+    var title: String
+    var bodyText: String
+    var likesCount: Int
+    var timestamp: Date
+    var postCat: String
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
