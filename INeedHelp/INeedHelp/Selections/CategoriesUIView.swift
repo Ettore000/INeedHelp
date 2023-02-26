@@ -22,9 +22,11 @@ struct CategoriesUIView: View {
                             Spacer()
                         }
                         ScrollView(.vertical) {
-                            CategoriesPostUIView(imageName: "food", title: "Food", subscribers: 122000)
-                                .frame(width: 400, height: 200)
-                                .opacity(0.9)
+                            NavigationLink(destination: FoodUIVew()) {
+                                CategoriesPostUIView(imageName: "food", title: "Food", subscribers: 122000)
+                                    .frame(width: 400, height: 200)
+                                    .opacity(0.9)
+                            }
                             CategoriesPostUIView(imageName: "home", title: "Home", subscribers: 23000)
                                 .frame(width: 400, height: 200)
                                 .opacity(0.9)

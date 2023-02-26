@@ -13,14 +13,6 @@ struct CategoriesPostUIView: View {
     var subscribers: Int
     
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 35)
-                .fill(Color.white)
-                .shadow(radius: 10)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 35)
-                        .stroke(Color.gray, lineWidth: 1)
-                )
             VStack {
                 Image(imageName)
                     .resizable()
@@ -49,7 +41,6 @@ struct CategoriesPostUIView: View {
                         }
                     )
             }
-        }
     }
 }
 
